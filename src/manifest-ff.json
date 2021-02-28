@@ -1,0 +1,48 @@
+{
+  "name": "__MSG_appName__",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [{
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "js": [
+      "app/app.js",
+      "plugins/plugins.js"
+    ]}
+  ],
+  "background": {
+    "scripts": [
+      "server/server.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "contextMenus",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "web_accessible_resources": [
+    "app/app.css"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "assets/icons/icon-19.png",
+      "38": "assets/icons/icon-38.png"
+    },
+    "default_title": "Read Better"
+  },
+  "applications": {
+    "gecko": {
+      "id": "wenguang.fe@gmail.com"
+    }
+  }
+}

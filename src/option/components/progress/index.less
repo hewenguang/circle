@@ -1,0 +1,13 @@
+.circle-progress{
+  width: 100%;
+  height: 6px;
+  border: 1px solid var(--dr-primary);
+  border-radius: 3px;
+  overflow: hidden;
+  .circle-progress-bar{
+    height: 100%;
+    width: 0;
+    background-color: var(--dr-primary);
+    transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1);
+  }
+}

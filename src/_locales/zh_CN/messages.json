@@ -1,0 +1,200 @@
+{
+  "name":{
+    "message": "Circle (阅读模式｜reader mode)"
+  },
+  "description":{
+    "message": "让网页赏心悦目、让阅读回归初心。Circle 提供更隐私、更轻松、更舒适的阅读体验"
+  },
+  "check":{
+    "message": "检查"
+  },
+  "loading":{
+    "message":"下一页解析成功，开始自动加载"
+  },
+  "checking":{
+    "message": "检查中"
+  },
+  "updating":{
+    "message": "更新中"
+  },
+  "latest_version":{
+    "message": "已是最新版本"
+  },
+  "update_error":{
+    "message": "更新失败，请在联网的状态下重试。错误原因："
+  },
+  "check_update":{
+    "message": "检查更新"
+  },
+  "option":{
+    "message": "选项"
+  },
+  "setting":{
+    "message": "设置"
+  },
+  "basic_setting":{
+    "message": "基础设置"
+  },
+  "plugin_manage":{
+    "message": "应用市场"
+  },
+  "auto_open":{
+    "message": "文章页面自动开启"
+  },
+  "hide_paper":{
+    "message": "取消纸张效果"
+  },
+  "hide_option":{
+    "message": "删除文章页面右上角选项按钮"
+  },
+  "hide_copyright":{
+    "message": "删除文章页面底部版权信息"
+  },
+  "help_center":{
+    "message": "帮助中心"
+  },
+  "usage":{
+    "message": "使用教程"
+  },
+  "about":{
+    "message": "关于 Circle"
+  },
+  "feature":{
+    "message": "功能介绍"
+  },
+  "changelog":{
+    "message": "更新日志"
+  },
+  "faq":{
+    "message": "常见问题"
+  },
+  "feedback":{
+    "message": "问题反馈"
+  },
+  "alert_msg":{
+    "message":"已经打开的网页当前的所有修改刷新后才会生效"
+  },
+  "error_msg":{
+    "message":"数据异常，请稍后再试"
+  },
+  "recommend":{
+    "message":"推荐"
+  },
+  "welcome":{
+    "message":"感谢您安装 Circle"
+  },
+  "init_info":{
+    "message":"系统初始化中，完成之前请不要关闭窗口"
+  },
+  "init_success":{
+    "message":"Circle 初始化已完成，尽情使用吧"
+  },
+  "user_guide":{
+    "message":"查看使用指南"
+  },
+  "enter_setting":{
+    "message":"进入设置页面"
+  },
+  "init_warn":{
+    "message":"初始化失败，Circle 无法提供服务"
+  },
+  "init_error":{
+    "message":"请在联网的状态下刷新当前页面。错误原因："
+  },
+  "installed":{
+    "message":"已安装"
+  },
+  "update": {
+    "message": "更新"
+  },
+  "install": {
+    "message": "安装"
+  },
+  "builtin": {
+    "message": "内建"
+  },
+  "uninstall": {
+    "message": "卸载"
+  },
+  "bg_color":{
+    "message": "背景颜色"
+  },
+  "text_color":{
+    "message": "文本颜色"
+  },
+  "link_color":{
+    "message": "链接颜色"
+  },
+  "font":{
+    "message": "字体类型"
+  },
+  "font_size":{
+    "message": "字体大小"
+  },
+  "lineheight":{
+    "message": "文字行高"
+  },
+  "page_width":{
+    "message": "页面宽度"
+  },
+  "font_space":{
+    "message": "文字间距"
+  },
+  "blockspacing":{
+    "message": "段落间距"
+  },
+  "line_indent":{
+    "message": "首行缩进"
+  },
+  "align_style":{
+    "message": "对齐方式"
+  },
+  "align_left":{
+    "message": "左对齐"
+  },
+  "align_center":{
+    "message": "居中对齐"
+  },
+  "align_right":{
+    "message": "右对齐"
+  },
+  "align_justify":{
+    "message": "两边对齐"
+  },
+  "font_simhei": {
+    "message": "黑体"
+  },
+  "font_simsun": {
+    "message": "宋体"
+  },
+  "font_nsimsun": {
+    "message": "新宋体"
+  },
+  "font_fangsong": {
+    "message": "仿宋"
+  },
+  "font_kaiti": {
+    "message": "楷体"
+  },
+  "font_microsoft_yahei": {
+    "message": "微软雅黑"
+  },
+  "font_hiragino": {
+    "message": "冬青黑体"
+  },
+  "font_stheiti_light": {
+    "message": "华文细黑"
+  },
+  "font_stheiti": {
+    "message": "华文黑体"
+  },
+  "font_stkaiti": {
+    "message": "华文楷体"
+  },
+  "font_stsong": {
+    "message": "华文宋体"
+  },
+  "font_stfangsong": {
+    "message": "华文仿宋"
+  }
+}

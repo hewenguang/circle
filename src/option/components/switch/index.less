@@ -1,0 +1,49 @@
+.circle-switch {
+  width: 38px;
+  .circle-switch-bar {
+    height: 14px;
+    background-color: rgba(34,31,31,0.26);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    .circle-switch-drag {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: #f1f1f1;
+      box-shadow: 0 0 1px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+      left: 0;
+      transition: 0.3s;
+    }
+    .circle-switch-input{
+      cursor: pointer;
+      opacity: 0;
+    }
+  }
+  &.checked {
+    .circle-switch-bar {
+      background-color: #a8bddc;
+      .circle-switch-drag {
+        background-color: var(--dr-primary);
+        left: calc(~'100% - 20px');
+      }
+    }
+  }
+  &.disabled {
+    .circle-switch-bar {
+      background-color: #f2f3f5;
+      cursor: not-allowed;
+      .circle-switch-drag{
+        cursor: not-allowed;
+        background-color: #f2f3f5;
+      }
+      .circle-switch-input{
+        cursor: not-allowed;
+      }
+    }
+  }
+}
