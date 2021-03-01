@@ -10,7 +10,7 @@ export default function(props){
     <button
       {...resetProps}
       disabled={disabled}
-      className={cx('circle-button', className, type, {loading})}
+      className={cx('cc-button', className, type, {loading})}
       onClick={() => {
         if(disabled || loading){
           return;

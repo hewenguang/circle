@@ -6,7 +6,7 @@ export default function(props){
   const { children, className } = props;
 
   return (
-    <div className={cx('circle-alert', className)}>
+    <div className={cx('cc-alert', className)}>
       {children}
     </div>
   );

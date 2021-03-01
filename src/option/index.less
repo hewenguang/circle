@@ -2,17 +2,17 @@ body{
   color: #5f6367;
   background: #f8f9fa;
   font-size: 16px;
-  --dr-white: #fff;
-  --dr-border: #d9dce0;
-  --dr-primary: #4974d4;
-  --dr-error: #ef5350;
-  --dr-warning: #ffa726;
-  --dr-success: #72c14b;
-  --dr-info: #2196f3;
+  --cc-white: #fff;
+  --cc-border: #d9dce0;
+  --cc-primary: #4974d4;
+  --cc-error: #ef5350;
+  --cc-warning: #ffa726;
+  --cc-success: #72c14b;
+  --cc-info: #2196f3;
 }
 
 a{
-  color:var(--dr-primary);
+  color:var(--cc-primary);
   text-decoration:none;
 }
 a:hover {
@@ -24,7 +24,7 @@ a:hover {
 }
 
 .option-error{
-  color: var(--dr-error);
+  color: var(--cc-error);
 }
 
 .option-root{
@@ -53,7 +53,7 @@ a:hover {
 .option-list{
   border-radius: 6px;
   margin-bottom: 40px;
-  background: var(--dr-white);
+  background: var(--cc-white);
   box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px;
 }
 
@@ -62,7 +62,7 @@ a:hover {
   display: block;
   padding: 10px 16px;
   position: relative;
-  border-bottom: 1px solid var(--dr-border);
+  border-bottom: 1px solid var(--cc-border);
   &:hover{
     color: #5f6367;
     text-decoration: none;
@@ -79,7 +79,7 @@ a:hover {
     top: 50%;
     display: flex;
     transform: translate(0, -50%);
-    .circle-button{
+    .cc-button{
       margin-left: 8px;
     }
   }

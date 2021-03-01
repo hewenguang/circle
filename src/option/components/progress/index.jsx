@@ -6,8 +6,8 @@ export default function(props){
   const { className, style, percent } = props;
  
   return (
-    <div style={style} className={cx('circle-progress', className)}>
-      <div className="circle-progress-bar" style={{width: `${percent}%`}} />
+    <div style={style} className={cx('cc-progress', className)}>
+      <div className="cc-progress-bar" style={{width: `${percent}%`}} />
     </div>
   );
 }

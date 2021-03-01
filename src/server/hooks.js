@@ -120,22 +120,22 @@ export default function(app){
   app.addAction('open-option-page', function(){
     api.runtime.openOptionsPage();
   });
-  app.addAction('dr-active', function(callback, { sender }){
+  app.addAction('cc-active', function(callback, { sender }){
     app.change(sender.tab.id, function(){
       callback(null);
     }, 'active');
   });
-  app.addAction('dr-inactive', function(callback, { sender }){
+  app.addAction('cc-inactive', function(callback, { sender }){
     app.change(sender.tab.id, function(){
       callback(null);
     }, 'enable');
   });
-  app.addAction('dr-enable', function(callback, { sender }){
+  app.addAction('cc-enable', function(callback, { sender }){
     app.change(sender.tab.id, function(){
       callback(null);
     }, 'enable', 'enable');
   });
-  app.addAction('dr-disable', function(callback, { sender }){
+  app.addAction('cc-disable', function(callback, { sender }){
     app.change(sender.tab.id, function(){
       callback(null);
     }, 'disable', 'disable');

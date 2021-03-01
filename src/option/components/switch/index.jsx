@@ -6,14 +6,14 @@ export default function(props){
   const { disabled, checked, onChange, className } = props;
 
   return (
-    <div className={cx('circle-switch', className, { checked, disabled })}>
-      <label className="circle-switch-bar">
-        <div className="circle-switch-drag" />
+    <div className={cx('cc-switch', className, { checked, disabled })}>
+      <label className="cc-switch-bar">
+        <div className="cc-switch-drag" />
         <input
           type="checkbox"
           checked={checked}
           disabled={disabled}
-          className="circle-switch-input"
+          className="cc-switch-input"
           onChange={event => {
             onChange && onChange(event.target.checked);
           }}

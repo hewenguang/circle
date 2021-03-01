@@ -5,4 +5,3 @@ window.app = app;
 
 // 加载解析引擎
 app.loadPlugin('parser');
-

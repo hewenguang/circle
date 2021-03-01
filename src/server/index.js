@@ -3,7 +3,7 @@ import hooks from './hooks';
 
 window.app = new Server({
   database: {
-    name: 'dr',
+    name: 'cc',
     tables: ['option', 'plugin'],
   },
 });

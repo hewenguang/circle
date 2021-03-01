@@ -1,7 +1,7 @@
-.circle-button {
-  border: 1px solid var(--dr-border);
+.cc-button {
+  border: 1px solid var(--cc-border);
   border-radius: 4px;
-  color:var(--dr-primary);
+  color:var(--cc-primary);
   cursor: pointer;
   background: transparent;
   padding: 6px 10px;
@@ -13,37 +13,37 @@
   &.loading{
     position: relative;
     padding-left: 40px;
-    .circle-loading{
+    .cc-loading{
       position: absolute;
       left: -20px;
       top: 0;
       svg{
-        fill: var(--dr-white);
+        fill: var(--cc-white);
       }
     }
   }
   &.primary {
-    color: var(--dr-white);
-    background-color: var(--dr-primary);
+    color: var(--cc-white);
+    background-color: var(--cc-primary);
     border-width: 0;
-    .circle-button svg{
-      fill: var(--dr-white);
+    .cc-button svg{
+      fill: var(--cc-white);
     }
   }
   &.success {
-    color: var(--dr-white);
-    background-color: var(--dr-success);
+    color: var(--cc-white);
+    background-color: var(--cc-success);
     border-width: 0;
-    .circle-button svg{
-      fill: var(--dr-white);
+    .cc-button svg{
+      fill: var(--cc-white);
     }
   }
   &.danger {
-    color: var(--dr-white);
-    background-color: var(--dr-error);
+    color: var(--cc-white);
+    background-color: var(--cc-error);
     border-width: 0;
-    .circle-button svg{
-      fill: var(--dr-white);
+    .cc-button svg{
+      fill: var(--cc-white);
     }
   }
   &:disabled, &:disabled:hover{
