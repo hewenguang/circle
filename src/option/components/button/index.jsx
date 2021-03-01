@@ -10,15 +10,16 @@ export default function(props){
     <button
       {...resetProps}
       disabled={disabled}
-      className={cx('circle-button', className, type)}
+      className={cx('circle-button', className, type, {loading})}
       onClick={() => {
-        if(disabled){
+        if(disabled || loading){
           return;
         }
         onClick && onClick();
       }}
     >
-      {loading ? <Loading /> : children}
+      {loading && <Loading />}
+      {children}
     </button>
   );
 }

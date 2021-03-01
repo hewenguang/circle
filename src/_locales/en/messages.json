@@ -5,9 +5,6 @@
   "description":{
     "message": "Make webpages pleasing to the eye and return reading to the original intention"
   },
-  "check":{
-    "message": "check"
-  },
   "loading":{
     "message":"The next page is parsed successfully, and the automatic loading starts"
   },
@@ -52,24 +49,6 @@
   },
   "help_center":{
     "message": "Help center"
-  },
-  "usage":{
-    "message": "Use tutorial"
-  },
-  "about":{
-    "message": "About Circle"
-  },
-  "feature":{
-    "message": "Features"
-  },
-  "changelog":{
-    "message": "Change log"
-  },
-  "faq":{
-    "message": "FAQ"
-  },
-  "feedback":{
-    "message": "Feedback"
   },
   "alert_msg":{
     "message":"All current modifications of the opened webpage will take effect after refresh"

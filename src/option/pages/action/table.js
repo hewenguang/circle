@@ -1,15 +1,3 @@
-export function count(table){
-  return new Promise(function(resolve, reject){
-    api.send(table, { execute: 'count' }, function({error, data = 0}){
-      if(error){
-        reject(error);
-      } else {
-        resolve(data);
-      }
-    });
-  });
-}
-
 export function add(table, name, value){
   return new Promise(function(resolve, reject){
     api.send(table, {
@@ -26,16 +14,13 @@ export function add(table, name, value){
   });
 }
 
-export function remove(table, name){
+export function get(table, name){
   return new Promise(function(resolve, reject){
-    api.send(table, {
-      name,
-      execute: 'remove',
-    }, function({error}){
+    api.send(table, { execute: 'get', name }, function({error, data}){
       if(error){
         reject(error);
       } else {
-        resolve();
+        resolve(data);
       }
     });
   });

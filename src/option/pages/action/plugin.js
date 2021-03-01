@@ -1,13 +1,5 @@
-import { fetch } from './index';
+import { fetch, getPlugins } from './index';
 import { add, getAll } from './table';
-
-export function getRemotePlugin(){
-  return new Promise(function(resolve, reject){
-    fetch(window.url).then(result => {
-      resolve(result);
-    }).catch(reject);
-  });
-}
 
 export function installPlugin(plugin){
   return new Promise(function(resolve, reject){
@@ -49,11 +41,13 @@ export function updatePlugins(plugins, callback, progress){
 export function checkPlugin(){
   return new Promise(function(resolve, reject){
     getAll('plugin').then(plugins => {
-      getRemotePlugin().then(remotes => {
+      getPlugins().then(remotes => {
         const lists = [];
         (remotes.data || []).forEach(item => {
           const match = plugins[item.name];
-          (match && match.version != item.version) && lists.push(item);
+          if(!match || match.version !== item.version){
+            lists.push(item)
+          }
         });
         resolve(lists);
       }).catch(reject);

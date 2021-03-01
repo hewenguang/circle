@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import Layout from './layout';
 import Welcome from './welcome';
-import { count } from './action/table';
+import { get } from './action/table';
 
 export default function(){
-  const [ num, setNum ] = useState(-1);
+  const [ ready, setReady  ] = useState(undefined);
 
   useEffect(() => {
-    count('plugin').then((data = 0) => {
-      setNum(data);
-    }).catch(err => {
-      console.error(err);
+    get('option', 'version').then(data => {
+      setReady(!!data);
+    }).catch(() => {
+      setReady(false);
     });
   }, []);
 
-  if(num < 0){
+  if(typeof ready === 'undefined'){
     return null;
   }
 
-  if(num < 3){
-    return <Welcome />;
+  if(ready){
+    return <Layout />;
   }
 
-  return <Layout />;
+  return <Welcome />;
 }

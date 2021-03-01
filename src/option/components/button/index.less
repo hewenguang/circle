@@ -3,13 +3,24 @@
   border-radius: 4px;
   color:var(--dr-primary);
   cursor: pointer;
-  min-height: 30px;
   background: transparent;
-  padding: 2px 10px;
+  padding: 6px 10px;
   user-select: none;
   transition: all .2s;
   &:hover {
     opacity: .8;
+  }
+  &.loading{
+    position: relative;
+    padding-left: 40px;
+    .circle-loading{
+      position: absolute;
+      left: -20px;
+      top: 0;
+      svg{
+        fill: var(--dr-white);
+      }
+    }
   }
   &.primary {
     color: var(--dr-white);

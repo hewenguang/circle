@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Button from 'src/option/components/button';
 import Loading from 'src/option/components/loading';
 import Progress from 'src/option/components/progress';
-import { updatePlugins, getRemotePlugin } from '../action/plugin';
+import { add } from '../action/table';
+import { getPlugins } from '../action/index';
+import { updatePlugins } from '../action/plugin';
 import './index.less';
 
 export default function(){
@@ -10,7 +12,7 @@ export default function(){
   const [ status, setStatus ] = useState('running');
 
   useEffect(() => {
-    getRemotePlugin().then(remotes => {
+    getPlugins().then(remotes => {
       const preset = remotes.preset || [];
       const plugins = (remotes.data || []).filter(item => preset.includes(item.name));
       if(plugins.length <= 0){
@@ -23,7 +25,9 @@ export default function(){
         if(error){
           setStatus(error);
         } else {
-          setStatus('success');
+          add('option', 'version', '1.0.0').then(function(){
+            setStatus('success');
+          });
         }
       }, function(){
         multiple ++;
@@ -77,7 +81,7 @@ export default function(){
   }
 
   return (
-    <div className="option-welcome">
+    <div className="option-root option-welcome">
       {children}
     </div>
   );

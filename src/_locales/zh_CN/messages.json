@@ -5,9 +5,6 @@
   "description":{
     "message": "让网页赏心悦目、让阅读回归初心。Circle 提供更隐私、更轻松、更舒适的阅读体验"
   },
-  "check":{
-    "message": "检查"
-  },
   "loading":{
     "message":"下一页解析成功，开始自动加载"
   },
@@ -52,24 +49,6 @@
   },
   "help_center":{
     "message": "帮助中心"
-  },
-  "usage":{
-    "message": "使用教程"
-  },
-  "about":{
-    "message": "关于 Circle"
-  },
-  "feature":{
-    "message": "功能介绍"
-  },
-  "changelog":{
-    "message": "更新日志"
-  },
-  "faq":{
-    "message": "常见问题"
-  },
-  "feedback":{
-    "message": "问题反馈"
   },
   "alert_msg":{
     "message":"已经打开的网页当前的所有修改刷新后才会生效"

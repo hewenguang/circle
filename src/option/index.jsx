@@ -6,6 +6,5 @@ import './reset.less';
 import './index.less';
 
 window.api = new API;
-window.url = 'https://ranhe.xyz/api/plugins.json';
 
 ReactDOM.render(<App />, document.getElementById('root'));

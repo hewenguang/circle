@@ -1,43 +1,28 @@
-import React, { useState } from 'react';
-import cx from 'classnames';
-import Alert from 'src/option/components/alert';
+import React from 'react';
+import Check from './check';
+import Link from './basic/link';
+import Switch from './basic/switch';
+// import Alert from 'src/option/components/alert';
 import Share from 'src/option/components/share';
-import Basic from './basic';
-import Plugin from './plugin';
 
 export default function(){
-  const [ tab, setTab ] = useState('basic');
-  const list = {
-    basic: {
-      title: api.i18n.getMessage('basic_setting'),
-      value: <Basic />
-    },
-    plugin: {
-      title: api.i18n.getMessage('plugin_manage'),
-      value: <Plugin />
-    },
-  };
-
   return (
     <div className="option-root">
-      <ul className="option-header">
-        {Object.keys(list).map(key => (
-          <li
-            key={key}
-            onClick={() => setTab(key)}
-            className={cx({active: key === tab})}
-          >
-            {list[key].title}
-          </li>
-        ))}
-      </ul>
-      <Alert className="option-alert">
+      {/* <Alert className="option-alert">
         {api.i18n.getMessage('alert_msg')}
-      </Alert>
-      <Share />
-      <div className="option-main">
-        {list[tab].value}
+      </Alert> */}
+      <h3 className="option-title">
+        {api.i18n.getMessage('basic_setting')}
+        <Check className="option-check" />
+      </h3>
+      <div className="option-list">
+        <Link url="https://ranhe.xyz/circle-usage">{api.i18n.getMessage('help_center')}</Link>
+        <Switch name="parser">{api.i18n.getMessage('auto_open')}</Switch>
+        <Switch name="hidepaper">{api.i18n.getMessage('hide_paper')}</Switch>
+        <Switch name="hideoption">{api.i18n.getMessage('hide_option')}</Switch>
+        <Switch name="hidecopyright">{api.i18n.getMessage('hide_copyright')}</Switch>
       </div>
+      <Share />
     </div>
   );
 }
