@@ -41,17 +41,8 @@
   "hide_paper":{
     "message": "取消纸张效果"
   },
-  "hide_option":{
-    "message": "删除文章页面右上角选项按钮"
-  },
-  "hide_copyright":{
-    "message": "删除文章页面底部版权信息"
-  },
   "help_center":{
     "message": "帮助中心"
-  },
-  "alert_msg":{
-    "message":"已经打开的网页当前的所有修改刷新后才会生效"
   },
   "error_msg":{
     "message":"数据异常，请稍后再试"

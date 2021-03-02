@@ -26,8 +26,8 @@ const getEntry = (sourceDir = 'src', outputDir = 'dev') => {
     'server/index': path.resolve(__dirname, `${sourceDir}/server/index.js`),
   };
   outputDir === '../dev' && (entries['server/hotreload'] = path.resolve(__dirname, `${sourceDir}/server/hot-reload.js`));
-  glob.sync('src/plugins/*/index.js*').forEach(item => {    
-    const name = item.split('/')[2];
+  glob.sync('plugins/*/index.js*').forEach(item => {    
+    const name = item.split('/')[1];
     entries[`plugins/v2/${name}`] = path.resolve(__dirname, `../${item}`);
   });
   return entries;

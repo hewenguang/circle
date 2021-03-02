@@ -41,17 +41,8 @@
   "hide_paper":{
     "message": "Cancel paper effect"
   },
-  "hide_option":{
-    "message": "Delete option button"
-  },
-  "hide_copyright":{
-    "message": "Delete copyright info"
-  },
   "help_center":{
     "message": "Help center"
-  },
-  "alert_msg":{
-    "message":"All current modifications of the opened webpage will take effect after refresh"
   },
   "error_msg":{
     "message":"Data is abnormal, please try again later"
