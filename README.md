@@ -10,7 +10,11 @@ Circle 就是一款这样的浏览器（目前仅支持 Chrome 浏览器）扩�
 
 为了解决上面普遍存在的问题，Circle 诞生了。Circle 是一款不太一样的浏览器扩展程序，我们采用自研的正文解析引擎，识别成功率大大提高，甚至于比 Safari 还要智能。只需单击一下，Circle 还你最纯粹的阅读体验，为你更好的阅读保驾护航。如果你正在寻找一款极度轻量化的阅读辅助产品，Circle 也许可以打动你
 
-查看 [官方文档](https://ranhe.xyz/circle) 获取更多信息。反馈问题请提 issue 
+进入[扩展市场](https://chrome.google.com/webstore/detail/circle-reader-mode/dhpfcgilccfkodnhbllpiaabofjbjcbg) 安装
+
+无法访问扩展市场的用户可以[点击这里](https://ranhe.xyz/post-images/circle.zip)下载安装包，安装教程和使用方式见 [官方文档](https://ranhe.xyz/circle-usage/)
+
+反馈问题请提 issue，没有 github 账户，可以发邮件反馈给我 wenguang.fe@gmail.com 
 
 ## 出色强大的识别能力
 
@@ -48,6 +52,6 @@ http://www.shb.cas.cn/kjjz2016/201607/t20160712_4639424.html
 
 ## 问题反馈
 
-遇到任何问题或者产品缺陷可以在 https://github.com/ranhexyz/circle 提 issue
+遇到任何问题或者产品缺陷可以在 https://github.com/hewenguang/circle/issues 提 issue
 
-没有 github 账号的话，可以通过微信号 hewenguang_fe 联系我
+没有 github 账号的话，可以通过邮箱 wenguang.fe@gmail.com 联系我
