@@ -37,11 +37,11 @@ export default class Table {
   add(name, value, callback, success){
     app.db.set(this.name, name, value, error => {
       if(error){
-        callback(error);
+        callback && callback(error);
         return;
       }
       success && success();
-      callback(null, value);
+      callback && callback(null, value);
     });
   }
 

@@ -31,6 +31,11 @@ export default class Client extends App {
       }
       return true;
     });
+    // 快捷键绑定
+    document.addEventListener('keyup', event => {
+      const keyCode = event.keyCode || event.which;
+      this.doAction('keyup', keyCode);
+    });
   }
 
   loadPlugin(name, callback){

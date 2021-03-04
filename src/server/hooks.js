@@ -112,6 +112,21 @@ export default function(app){
         callback('not find action');
     }
   });
+  app.addAction('reset-theme', function(callback){
+    const defaultTheme = {
+      width:"680px",
+      indent:'0em',
+      size:'20px',
+      spacing:0,
+      blockspacing:'32px',
+      align:'left',
+      font:'default',
+      lineheight:'1.8',
+    };
+    optionTable.add('theme', defaultTheme, function(){
+      callback && callback(null, defaultTheme);
+    });
+  });
   app.addAction('fetch', function(callback, { request }){
     api.fetch(request.url, function(error, data){
       callback(error, data);
@@ -162,7 +177,7 @@ export default function(app){
       return;
     }
     // 写入初始主题
-    app.db.set('option', 'theme', {
+    optionTable.add('theme', {
       preset:'light',
       custom: {
         'color-red':27,

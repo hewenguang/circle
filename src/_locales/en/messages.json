@@ -41,6 +41,12 @@
   "hide_paper":{
     "message": "Cancel paper effect"
   },
+  "blacklist":{
+    "message": "blacklist"
+  },
+  "list_rule":{
+    "message": "One URL or domain name per line"
+  },
   "help_center":{
     "message": "Help center"
   },

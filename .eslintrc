@@ -15,6 +15,7 @@
     "api": true,
     "utils": true,
     "dom": true,
-    "hljs": true
+    "hljs": true,
+    "ga": true
   }
 }

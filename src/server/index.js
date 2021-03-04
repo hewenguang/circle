@@ -1,5 +1,6 @@
 import Server from './includes/class.server';
 import hooks from './hooks';
+import analytics from './analytics';
 
 window.app = new Server({
   database: {
@@ -10,6 +11,8 @@ window.app = new Server({
 
 // 挂载勾子
 hooks(app);
+//数据统计
+analytics(app);
 
 // api.contextMenus.create({
 //   enabled: true,
@@ -34,19 +37,3 @@ hooks(app);
 
 // 启动应用
 app.init();
-
-// <!-- Global site tag (gtag.js) - Google Analytics -->
-// <script async src="https://www.googletagmanager.com/gtag/js?id=G-582ZS82CBJ"></script>
-// <script>
-//   window.dataLayer = window.dataLayer || [];
-//   function gtag(){dataLayer.push(arguments);}
-//   gtag('js', new Date());
-
-//   gtag('config', 'G-582ZS82CBJ');
-// </script>
-
-// (function() {
-//   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-//   ga.src = 'https://ssl.google-analytics.com/ga.js';
-//   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-// })();

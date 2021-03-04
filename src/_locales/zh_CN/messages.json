@@ -36,7 +36,13 @@
     "message": "应用市场"
   },
   "auto_open":{
-    "message": "文章页面自动开启"
+    "message": "自动开启"
+  },
+  "blacklist":{
+    "message": "不自动解析"
+  },
+  "list_rule":{
+    "message": "网址或域名，一行一个"
   },
   "hide_paper":{
     "message": "取消纸张效果"
