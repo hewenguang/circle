@@ -35,5 +35,6 @@
       "16": "assets/icon/16/disable.png",
       "32": "assets/icon/32/disable.png"
     }
-  }
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
 }

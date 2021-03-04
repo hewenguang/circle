@@ -52,6 +52,10 @@ http://www.shb.cas.cn/kjjz2016/201607/t20160712_4639424.html
 
 ## 问题反馈
 
+QQ 讨论组：605710052
+
+![Circle 讨论组](https://ranhe.xyz/post-images/1614838148943.jpeg)
+
 遇到任何问题或者产品缺陷可以在 https://github.com/hewenguang/circle/issues 提 issue
 
 没有 github 账号的话，可以通过邮箱 wenguang.fe@gmail.com 联系我
