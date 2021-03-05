@@ -23,17 +23,14 @@
   "check_update":{
     "message": "Check for updates"
   },
-  "option":{
-    "message": "option"
-  },
   "setting":{
     "message": "setting"
   },
   "basic_setting":{
     "message": "Basic Settings"
   },
-  "plugin_manage":{
-    "message": "Application market"
+  "whitelist":{
+    "message": "whitelist"
   },
   "auto_open":{
     "message": "Automatically open"
@@ -42,19 +39,37 @@
     "message": "Cancel paper effect"
   },
   "blacklist":{
-    "message": "blacklist"
+    "message": "Blacklist"
   },
   "list_rule":{
     "message": "One URL or domain name per line"
   },
   "help_center":{
-    "message": "Help center"
+    "message": "Help Center"
+  },
+  "feedback":{
+    "message": "Feedback"
+  },
+  "usage":{
+    "message": "Usage"
+  },
+  "source_code":{
+    "message": "View the source code on GitHub"
+  },
+  "disable_nextpage":{
+    "message": "Disable auto resolve next page"
+  },
+  "donate":{
+    "message": "Buy me a cup of coffee"
+  },
+  "contact":{
+    "message": "My wechat: hewenguang_fe"
+  },
+  "discussion_group":{
+    "message": "Join QQ discussion group: 605710052 to get the latest information"
   },
   "error_msg":{
     "message":"Data is abnormal, please try again later"
-  },
-  "recommend":{
-    "message":"Recommend"
   },
   "welcome":{
     "message":"Thank you for installing Circle"
@@ -76,21 +91,6 @@
   },
   "init_error":{
     "message":"Please refresh the current page when connected to the Internet. wrong reason:"
-  },
-  "installed":{
-    "message":"Installed"
-  },
-  "update": {
-    "message": "Update"
-  },
-  "install": {
-    "message": "Install"
-  },
-  "builtin": {
-    "message": "Built-in"
-  },
-  "uninstall": {
-    "message": "Uninstall"
   },
   "bg_color":{
     "message": "Background color"

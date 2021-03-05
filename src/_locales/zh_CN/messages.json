@@ -23,20 +23,17 @@
   "check_update":{
     "message": "检查更新"
   },
-  "option":{
-    "message": "选项"
-  },
   "setting":{
     "message": "设置"
   },
   "basic_setting":{
     "message": "基础设置"
   },
-  "plugin_manage":{
-    "message": "应用市场"
+  "whitelist":{
+    "message": "白名单"
   },
   "auto_open":{
-    "message": "自动开启"
+    "message": "默认开启"
   },
   "blacklist":{
     "message": "不自动解析"
@@ -50,11 +47,29 @@
   "help_center":{
     "message": "帮助中心"
   },
+  "feedback":{
+    "message": "问题反馈"
+  },
+  "usage":{
+    "message": "使用指南"
+  },
+  "source_code":{
+    "message": "github 上查看源代码"
+  },
+  "disable_nextpage":{
+    "message": "禁用自动解析下一页"
+  },
+  "donate":{
+    "message": "请我喝杯咖啡 ☕️"
+  },
+  "contact":{
+    "message": "我的微信：hewenguang_fe"
+  },
+  "discussion_group":{
+    "message": "加入 QQ 讨论组：605710052 获取最新信息"
+  },
   "error_msg":{
     "message":"数据异常，请稍后再试"
-  },
-  "recommend":{
-    "message":"推荐"
   },
   "welcome":{
     "message":"感谢您安装 Circle"
@@ -76,21 +91,6 @@
   },
   "init_error":{
     "message":"请在联网的状态下刷新当前页面。错误原因："
-  },
-  "installed":{
-    "message":"已安装"
-  },
-  "update": {
-    "message": "更新"
-  },
-  "install": {
-    "message": "安装"
-  },
-  "builtin": {
-    "message": "内建"
-  },
-  "uninstall": {
-    "message": "卸载"
   },
   "bg_color":{
     "message": "背景颜色"

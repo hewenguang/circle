@@ -4,7 +4,7 @@
 
 Circle 就是一款这样的浏览器（目前仅支持 Chrome 浏览器）扩展程序，如下图所示
 
-![Circle （阅读模式）智能识别效果](https://ranhe.xyz/post-images/1613019066732.png)
+![Circle （阅读模式）智能识别效果](https://raw.githubusercontent.com/wiki/hewenguang/circle/img/1613019066732.png)
 
 具有同样功能的产品很多，这类产品最大的问题就是识别正文效果太差，识别失败、识别成非正文、漏掉正文、图片裂开等都是常事。在我看来目前做的比较好的是苹果系统的 Safari 浏览器。即使是 Safari 浏览器也或多或少的存在此类问题，除此之外 Safari 的设置界面太简单，定制型不够灵活 
 
@@ -12,7 +12,7 @@ Circle 就是一款这样的浏览器（目前仅支持 Chrome 浏览器）扩�
 
 进入[扩展市场](https://chrome.google.com/webstore/detail/circle-reader-mode/dhpfcgilccfkodnhbllpiaabofjbjcbg) 安装
 
-无法访问扩展市场的用户可以[点击这里](https://ranhe.xyz/post-images/circle.zip)下载安装包，安装教程和使用方式见 [官方文档](https://ranhe.xyz/circle-usage/)
+无法访问扩展市场的用户可以[点击这里](https://raw.githubusercontent.com/wiki/hewenguang/circle/img/circle.zip)下载安装包，安装教程和使用方式见 [官方文档](https://ranhe.xyz/circle-usage/)
 
 反馈问题请提 issue，没有 github 账户，可以发邮件反馈给我 wenguang.fe@gmail.com 
 
@@ -32,19 +32,19 @@ http://www.shb.cas.cn/kjjz2016/201607/t20160712_4639424.html
 
 识别成功正文只是一部分工作，如何更舒适的阅读才是我们关心的重点。为此 Circle 内置了 5 款主题，提供更多、更绚丽的主题，方便用户更好的阅读。如下图所示：
 
-![Circle（阅读模式） 内置了 5 款主题](https://ranhe.xyz/post-images/1613021126940.png)
+![Circle（阅读模式） 内置了 5 款主题](https://raw.githubusercontent.com/wiki/hewenguang/circle/img/1613021126940.png)
 
 ## 更灵活的自定义主题
 
 正如莎士比亚说的 “ 一千个观众眼中有一千个哈姆雷特 ” 不同的人有不同的阅读喜好，内置的主题做不到让所有人都喜欢，所以我们支持自定义。如下图所示：
 
-![Circle（阅读模式） 支持自定义主题](https://ranhe.xyz/post-images/1613021309389.png)
+![Circle（阅读模式） 支持自定义主题](https://raw.githubusercontent.com/wiki/hewenguang/circle/img/1613021309389.png)
 
 ## 更丰富的页面配置
 
 页面字体，字体大小，行高，段落间距，页面宽度等等，统统允许你自己设置。如下图所示：
 
-![Circle（阅读模式） 灵活配置选项](https://ranhe.xyz/post-images/1613263480613.png)
+![Circle（阅读模式） 灵活配置选项](https://raw.githubusercontent.com/wiki/hewenguang/circle/img/1613263480613.png)
 
 ## 安装和使用
 
@@ -54,7 +54,7 @@ http://www.shb.cas.cn/kjjz2016/201607/t20160712_4639424.html
 
 QQ 讨论组：605710052
 
-![Circle 讨论组](https://ranhe.xyz/post-images/1614838148943.jpeg)
+![Circle 讨论组](https://raw.githubusercontent.com/wiki/hewenguang/circle/img/1614838148943.jpeg)
 
 遇到任何问题或者产品缺陷可以在 https://github.com/hewenguang/circle/issues 提 issue
 

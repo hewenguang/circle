@@ -2,7 +2,7 @@ import React from 'react';
 import Textarea from  'src/option/components/textarea';
 
 export default function(props){
-  const { value, onChange, children } = props;
+  const { value, onChange, children, placeholder } = props;
 
   return (
     <div className="option-item option-textarea">
@@ -11,7 +11,7 @@ export default function(props){
         <Textarea
           value={value}
           onChange={onChange}
-          placeholder={api.i18n.getMessage('list_rule')}
+          placeholder={placeholder}
         />
       </div>
     </div>

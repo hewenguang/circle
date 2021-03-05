@@ -8,6 +8,7 @@ import Share from 'src/option/components/share';
 export default function(){
   const [ option, setOption ] = useState({});
   const handleChange = (name, value) => {
+    api.send('analytics-click', `option-${name}`);
     api.send('option', { execute: 'add', name, value }, function({error}){
       if(error){
         console.error(error);
@@ -34,7 +35,18 @@ export default function(){
         <Check className="option-check" />
       </h3>
       <div className="option-list">
-        <Link url="https://ranhe.xyz/circle-usage">{api.i18n.getMessage('help_center')}</Link>
+        <Switch
+          value={option.hidepaper}
+          onChange={val => handleChange('hidepaper', val)}
+        >
+          {api.i18n.getMessage('hide_paper')}
+        </Switch>
+        <Switch
+          value={option.disable_nextpage}
+          onChange={val => handleChange('disable_nextpage', val)}
+        >
+          {api.i18n.getMessage('disable_nextpage')}
+        </Switch>
         <Switch
           value={option.parser}
           onChange={val => handleChange('parser', val)}
@@ -44,22 +56,31 @@ export default function(){
         {option.parser && (
           <Textarea
             value={option.blacklist}
+            placeholder={api.i18n.getMessage('list_rule')}
             onChange={val => handleChange('blacklist', val)}
           >
             {api.i18n.getMessage('blacklist')}
           </Textarea>
         )}
-        <Switch
-          value={option.hidepaper}
-          onChange={val => handleChange('hidepaper', val)}
+        <Textarea
+          value={option.whitelist}
+          placeholder="匹配自动开启"
+          onChange={val => handleChange('whitelist', val)}
         >
-          {api.i18n.getMessage('hide_paper')}
-        </Switch>
-        <div className="option-item option-chat">
-          QQ 讨论组：605710052
-        </div>
+          {api.i18n.getMessage('whitelist')}
+        </Textarea>
       </div>
-      <Share />
+      <h3 className="option-title">
+        {api.i18n.getMessage('help_center')}
+        <Share />
+      </h3>
+      <div className="option-list">
+        <Link url="https://github.com/hewenguang/circle/issues">{api.i18n.getMessage('feedback')}</Link>
+        <Link url="https://github.com/hewenguang/circle/wiki/Circle-%E9%98%85%E8%AF%BB%E6%A8%A1%E5%BC%8F%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B">{api.i18n.getMessage('usage')}</Link>
+        <Link url="https://github.com/hewenguang/circle">{api.i18n.getMessage('source_code')}</Link>
+        <div className="option-item option-donate">{api.i18n.getMessage('donate')}<img src="../assets/img/donate.jpg" /></div>
+        <div className="option-item">{api.i18n.getMessage('contact')}<br />{api.i18n.getMessage('discussion_group')}</div>
+      </div>
     </div>
   );
 }

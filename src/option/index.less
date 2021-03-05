@@ -19,8 +19,16 @@ a:hover {
   text-decoration:underline;
 }
 
+html, body, #root{
+  height: 100%;
+}
+
 #root{
-  padding:60px 0 0;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  padding: 20px 0;
+  min-height: 640px;
 }
 
 .option-error{
@@ -29,10 +37,7 @@ a:hover {
 
 .option-root{
   width: 580px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 .option-title{
@@ -52,14 +57,9 @@ a:hover {
   }
 }
 
-.option-chat{
-  text-align:right;
-  color:#4a74d3;
-}
-
 .option-list{
   border-radius: 6px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   background: var(--cc-white);
   box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px;
 }
@@ -89,5 +89,21 @@ a:hover {
     .cc-button{
       margin-left: 8px;
     }
+  }
+}
+
+.option-donate{
+  position: relative;
+  img{
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: -245px;
+    right: 0;
+    width: 360px;
+    z-index: 100;
+  }
+  &:hover img{
+    display: block;
   }
 }

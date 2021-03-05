@@ -176,6 +176,7 @@ export default function(app){
     if(details.reason !== 'install') {
       return;
     }
+    app.doAction('analytics-click', 'install');
     // 写入初始主题
     optionTable.add('theme', {
       preset:'light',
@@ -191,7 +192,9 @@ export default function(app){
         'bgcolor-blue':255,
       }
     });
-    api.runtime.setUninstallURL('https://ranhe.xyz/circle-uninstall');
+    api.runtime.setUninstallURL('https://ranhe.xyz/circle-uninstall', function(){
+      app.doAction('analytics-click', 'uninstall');
+    });
     app.doAction('open-option-page');
   });
 }
