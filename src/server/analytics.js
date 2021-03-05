@@ -3,12 +3,13 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'G-582ZS82CBJ', 'auto');
+ga('create', 'UA-156433061-2', 'auto');
 ga('set', 'checkProtocolTask', function(){});
 ga('send', 'pageview', '/circle.html');
 
 export default function(app){
-  app.addAction('analytics-click', function(area){
-    ga('send', 'event', area, 'click');
+  app.addAction('analytics-click', function(callback, {request}){
+    const event = request.event;
+    utils.isString(event) && ga('send', 'event', event, 'click');
   });
 }

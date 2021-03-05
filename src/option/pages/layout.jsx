@@ -8,7 +8,7 @@ import Share from 'src/option/components/share';
 export default function(){
   const [ option, setOption ] = useState({});
   const handleChange = (name, value) => {
-    api.send('analytics-click', `option-${name}`);
+    api.send('analytics-click', {event: `option-${name}`});
     api.send('option', { execute: 'add', name, value }, function({error}){
       if(error){
         console.error(error);

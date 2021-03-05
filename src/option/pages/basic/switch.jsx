@@ -7,7 +7,11 @@ export default function(props){
   return (
     <div
       className="option-item"
-      onClick={() => onChange(!value)}
+      onClick={(event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        onChange(!value);
+      }}
     >
       {children}
       <div className="option-buttons">

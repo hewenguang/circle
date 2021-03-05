@@ -32,11 +32,11 @@
   "whitelist":{
     "message": "白名单"
   },
+  "blacklist":{
+    "message": "黑名单"
+  },
   "auto_open":{
     "message": "默认开启"
-  },
-  "blacklist":{
-    "message": "不自动解析"
   },
   "list_rule":{
     "message": "网址或域名，一行一个"

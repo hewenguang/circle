@@ -32,14 +32,14 @@
   "whitelist":{
     "message": "whitelist"
   },
+  "blacklist":{
+    "message": "Blacklist"
+  },
   "auto_open":{
     "message": "Automatically open"
   },
   "hide_paper":{
     "message": "Cancel paper effect"
-  },
-  "blacklist":{
-    "message": "Blacklist"
   },
   "list_rule":{
     "message": "One URL or domain name per line"
