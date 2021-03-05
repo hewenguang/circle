@@ -31,9 +31,17 @@ export default class Client extends App {
       }
       return true;
     });
+    this.bindEvents();
+  }
+
+  bindEvents(){
+    let keyupCount = 0;
     // 快捷键绑定
     document.addEventListener('keyup', event => {
       const keyCode = event.keyCode || event.which;
+      keyupCount++
+      keyupCount >= 2 && this.doAction('double-keyup', keyCode);
+      setTimeout(function(){keyupCount = 0}, 500);
       this.doAction('keyup', keyCode);
     });
   }

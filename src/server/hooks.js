@@ -172,6 +172,23 @@ export default function(app){
       });
     }
   });
+  api.contextMenus.create({
+    title: 'Circle 阅读模式',
+    id: 'circle',
+  });
+  api.contextMenus.create({
+    title: '聚焦模式',
+    parentId:'circle',
+    id: 'circle-focus',
+    onclick: (info, tab) => {
+      if(info.pageUrl.startsWith('chrome')){
+        return;
+      }
+      api.tabs.sendMessage(tab.id, {
+        action: 'circle-focus',
+      });
+    },
+  });
   api.runtime.onInstalled.addListener(details => {
     if(details.reason !== 'install') {
       return;

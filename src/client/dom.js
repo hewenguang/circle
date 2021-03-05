@@ -148,18 +148,33 @@ export function disableStyleSheets(disabled, callback){
   });
 }
 
-// export function siblings(node, callback) {
-//   if (!node || !node.parentElement) {
-//     return;
-//   }
-//   let tempNode = node.parentElement.firstElementChild;
-//   while (tempNode && !tag(tempNode, 'body')) {
-//     if (tempNode !== node) {
-//       utils.isFunction(callback) && callback(tempNode);
-//     }
-//     tempNode = tempNode.nextElementSibling;
-//   }
-// }
+export function siblings(node, callback) {
+  if (!node || !node.parentElement) {
+    return;
+  }
+  let tempNode = node.parentElement.firstElementChild;
+  while (tempNode && !tag(tempNode, 'body')) {
+    if (tempNode !== node) {
+      utils.isFunction(callback) && callback(tempNode);
+    }
+    tempNode = tempNode.nextElementSibling;
+  }
+}
+
+export function parentExcept(node, callback) {
+  if (!node || !node.parentElement) {
+    return;
+  }
+  let tempNode = node;
+  while (tempNode && !tag(tempNode, 'body')){
+    siblings(tempNode, item => {
+      utils.isFunction(callback) && callback(item);
+    });
+    tempNode = tempNode.parentElement;
+    // utils.isFunction(parentCallback) && parentCallback(tempNode);
+  }
+  // utils.isFunction(parentCallback) && parentCallback(tempNode);
+}
 
 // export function parentBoth(node,target){
 //   for(;node;node = node.parentElement){
@@ -167,21 +182,6 @@ export function disableStyleSheets(disabled, callback){
 //       return node;
 //     }
 //   }
-// }
-
-// export function parentExcept(node, callback, parentCallback) {
-//   if (!node || !node.parentElement) {
-//     return;
-//   }
-//   let tempNode = node;
-//   while (tempNode && !tag(tempNode, 'body')) {
-//     utils.isFunction(parentCallback) && parentCallback(tempNode);
-//     siblings(tempNode, item => {
-//       utils.isFunction(callback) && callback(item);
-//     });
-//     tempNode = tempNode.parentElement;
-//   }
-//   utils.isFunction(parentCallback) && parentCallback(tempNode);
 // }
 
 // export function getSelector(node, withoutClass, index = 1){

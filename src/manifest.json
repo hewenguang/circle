@@ -25,6 +25,7 @@
     "persistent": true
   },
   "permissions": [
+    "contextMenus",
     "webRequest",
     "webRequestBlocking",
     "http://*/*",
