@@ -8,6 +8,9 @@
   "nextpage_loading":{
     "message":"下一页解析成功，开始自动加载"
   },
+  "copyright":{
+    "message":"本文由 Circle 阅读模式渲染生成，版权归原文所有"
+  },
   "checking":{
     "message": "检查中"
   },
@@ -22,9 +25,6 @@
   },
   "check_update":{
     "message": "检查更新"
-  },
-  "setting":{
-    "message": "设置"
   },
   "basic_setting":{
     "message": "基础设置"
@@ -172,5 +172,8 @@
   },
   "font_stfangsong": {
     "message": "华文仿宋"
+  },
+  "reset_setting": {
+    "message": "重置排版"
   }
 }

@@ -35,13 +35,14 @@ export default class Client extends App {
   }
 
   bindEvents(){
-    let keyupCount = 0;
+    let keyMap = {};
     // 快捷键绑定
     document.addEventListener('keyup', event => {
       const keyCode = event.keyCode || event.which;
-      keyupCount++
-      keyupCount >= 2 && this.doAction('double-keyup', keyCode);
-      setTimeout(function(){keyupCount = 0}, 500);
+      !utils.isNumber(keyMap[keyCode]) && (keyMap[keyCode] = 0);
+      keyMap[keyCode]++;
+      keyMap[keyCode] >= 2 && this.doAction('double-keyup', keyCode);
+      setTimeout(function(){keyMap = {}}, 500);
       this.doAction('keyup', keyCode);
     });
   }
@@ -49,6 +50,7 @@ export default class Client extends App {
   loadPlugin(name, callback){
     if(this._cache.plugins[name]){
       callback && callback(this._cache.plugins[name]);
+      app.doAction(`load-plugin-${name}`);
     } else {
       api.send('plugin', { execute: 'load', name }, ({error, data}) => {
         if(error){
@@ -57,6 +59,7 @@ export default class Client extends App {
         }
         this._cache.plugins[name] = data;
         callback && callback(data);
+        app.doAction(`load-plugin-${name}`);
       });
     }
   }
