@@ -11,65 +11,38 @@
   "copyright":{
     "message":"本文由 Circle 阅读模式渲染生成，版权归原文所有"
   },
-  "checking":{
-    "message": "检查中"
-  },
-  "updating":{
-    "message": "更新中"
-  },
-  "latest_version":{
-    "message": "已是最新版本"
-  },
-  "update_error":{
-    "message": "更新失败，请在联网的状态下重试。错误原因："
-  },
-  "check_update":{
-    "message": "检查更新"
-  },
   "basic_setting":{
     "message": "基础设置"
-  },
-  "whitelist":{
-    "message": "白名单"
-  },
-  "blacklist":{
-    "message": "黑名单"
-  },
-  "auto_open":{
-    "message": "默认开启"
   },
   "hide_paper":{
     "message": "取消纸张效果"
   },
+  "disable_nextpage":{
+    "message": "禁用自动解析下一页"
+  },
+  "whitelist":{
+    "message": "白名单"
+  },
   "whitelist_rule":{
     "message": "匹配自动开启，一行一个网址或域名"
   },
+  "blacklist":{
+    "message": "黑名单"
+  },
   "blacklist_rule":{
+    "message": "匹配到禁止处理，一行一个网址或域名"
+  },
+  "auto_open":{
+    "message": "默认开启"
+  },
+  "ignore":{
+    "message": "排除规则"
+  },
+  "ignore_rule":{
     "message": "默认开启的情况下匹配则禁止开启，一行一个网址或域名"
   },
   "help_center":{
     "message": "帮助中心"
-  },
-  "feedback":{
-    "message": "问题反馈"
-  },
-  "usage":{
-    "message": "使用指南"
-  },
-  "source_code":{
-    "message": "github 上查看源代码"
-  },
-  "disable_nextpage":{
-    "message": "禁用自动解析下一页"
-  },
-  "donate":{
-    "message": "请我喝杯 ☕️"
-  },
-  "contact":{
-    "message": "微信联系我：hewenguang_fe"
-  },
-  "discussion_group":{
-    "message": "QQ 讨论组：605710052"
   },
   "error_msg":{
     "message":"数据异常，请稍后再试"

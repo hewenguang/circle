@@ -188,10 +188,10 @@ export default function(app){
     },
   });
   api.runtime.onInstalled.addListener(details => {
+    app.doAction('analytics-click', () => {}, {request:{event: details.reason}});
     if(details.reason !== 'install') {
       return;
     }
-    app.doAction('analytics-click', () => {}, {request:{event: 'install'}});
     // 写入初始主题
     optionTable.add('theme', {
       preset:'light',
@@ -207,9 +207,7 @@ export default function(app){
         'bgcolor-blue':255,
       }
     });
-    api.runtime.setUninstallURL('https://ranhe.xyz/circle-uninstall', function(){
-      app.doAction('analytics-click', () => {}, {request:{event: 'uninstall'}});
-    });
+    api.runtime.setUninstallURL('https://ranhe.xyz/circle-uninstall');
     app.doAction('open-option-page');
   });
 }

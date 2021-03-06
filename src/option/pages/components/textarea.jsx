@@ -1,11 +1,12 @@
 import React from 'react';
+import cx from 'classnames';
 import Textarea from  'src/option/components/textarea';
 
 export default function(props){
-  const { value, onChange, children, placeholder } = props;
+  const { className, value, onChange, children, placeholder } = props;
 
   return (
-    <div className="option-item option-textarea">
+    <div className={cx('option-item option-textarea', className)}>
       {children}
       <div className="option-buttons">
         <Textarea

@@ -16,19 +16,11 @@ a{
   text-decoration:none;
 }
 a:hover {
-  text-decoration:underline;
-}
-
-html, body, #root{
-  height: 100%;
+  text-decoration: none;
 }
 
 #root{
-  display: flex;
-  align-items: center;
-  overflow: auto;
-  padding: 20px 0;
-  min-height: 640px;
+  padding: 40px 0;
 }
 
 .option-error{
@@ -36,17 +28,26 @@ html, body, #root{
 }
 
 .option-root{
-  width: 580px;
-  margin: 0 auto;
+  width: 600px;
+  margin: 80px auto 0;
 }
 
-.option-title{
-  font-weight: 400;
-  margin-bottom: 16px;
-}
-
-.option-check{
-  float: right;
+.option-header{
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+  justify-content: space-between;
+  li{
+    cursor: pointer;
+    &:hover{
+      color:var(--cc-primary);
+    }
+    &.active{
+      font-size: 20px;
+      color:var(--cc-primary);
+    }
+  }
 }
 
 .option-textarea{
@@ -69,16 +70,13 @@ html, body, #root{
   display: block;
   padding: 10px 16px;
   position: relative;
-  border-bottom: 1px solid var(--cc-border);
+  border-top: 1px solid var(--cc-border);
   &:hover{
     color: #5f6367;
     text-decoration: none;
   }
-  &:last-child{
+  &:first-child{
     border: 0;
-  }
-  .option-line{
-    margin: 0;
   }
   .option-buttons{
     position: absolute;
@@ -92,20 +90,16 @@ html, body, #root{
   }
 }
 
-.option-donate{
-  position: relative;
-  img{
-    display: none;
-    background:#eaeaea;
-    position: absolute;
-    top: -158px;
-    right: 0;
-    width: 360px;
-    z-index: 100;
-    padding: 2px;
-    border: 1px solid #ccc;
-  }
-  &:hover img{
-    display: block;
-  }
+.option-parser{
+  border: 0;
+}
+
+.option-center{
+  text-align: center;
+}
+
+.option-iframe{
+  height: 500px;
+  width: 100%;
+  border: 0;
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Layout from './layout';
+import App from './app';
 import Welcome from './welcome';
 import { get } from './action/table';
 
@@ -19,7 +19,7 @@ export default function(){
   }
 
   if(ready){
-    return <Layout />;
+    return <App />;
   }
 
   return <Welcome />;

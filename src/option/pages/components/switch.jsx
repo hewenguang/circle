@@ -1,12 +1,13 @@
 import React from 'react';
+import cx from 'classnames';
 import Switch from 'src/option/components/switch';
 
 export default function(props){
-  const { value, onChange, children } = props;
+  const { className, value, onChange, children } = props;
 
   return (
     <div
-      className="option-item"
+      className={cx('option-item', className)}
       onClick={(event) => {
         event.preventDefault();
         event.stopPropagation();

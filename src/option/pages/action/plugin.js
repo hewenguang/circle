@@ -1,5 +1,5 @@
-import { fetch, getPlugins } from './index';
-import { add, getAll } from './table';
+import { fetch } from './index';
+import { add } from './table';
 
 export function installPlugin(plugin){
   return new Promise(function(resolve, reject){
@@ -35,22 +35,5 @@ export function updatePlugins(plugins, callback, progress){
     updatePlugins(plugins, callback, progress);
   }).catch(error => {
     callback(error);
-  });
-}
-
-export function checkPlugin(){
-  return new Promise(function(resolve, reject){
-    getAll('plugin').then(plugins => {
-      getPlugins().then(remotes => {
-        const lists = [];
-        (remotes.data || []).forEach(item => {
-          const match = plugins[item.name];
-          if(!match || match.version !== item.version){
-            lists.push(item)
-          }
-        });
-        resolve(lists);
-      }).catch(reject);
-    }).catch(reject);
   });
 }
