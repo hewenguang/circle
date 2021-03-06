@@ -184,16 +184,14 @@ export default function(app){
       if(info.pageUrl.startsWith('chrome')){
         return;
       }
-      api.tabs.sendMessage(tab.id, {
-        action: 'circle-focus',
-      });
+      api.tabs.sendMessage(tab.id, {action: 'circle-focus'});
     },
   });
   api.runtime.onInstalled.addListener(details => {
     if(details.reason !== 'install') {
       return;
-    }    
-    app.doAction('analytics-click', () => {}, {event: 'install'});
+    }
+    app.doAction('analytics-click', () => {}, {request:{event: 'install'}});
     // 写入初始主题
     optionTable.add('theme', {
       preset:'light',
@@ -210,7 +208,7 @@ export default function(app){
       }
     });
     api.runtime.setUninstallURL('https://ranhe.xyz/circle-uninstall', function(){
-      app.doAction('analytics-click', () => {}, {event: 'uninstall'});
+      app.doAction('analytics-click', () => {}, {request:{event: 'uninstall'}});
     });
     app.doAction('open-option-page');
   });
