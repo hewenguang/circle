@@ -117,7 +117,7 @@ export default function(app){
       width:"680px",
       indent:'0em',
       size:'20px',
-      spacing:0,
+      spacing:'0px',
       blockspacing:'32px',
       align:'left',
       font:'default',

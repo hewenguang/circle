@@ -56,7 +56,7 @@ export default function(){
         {option.parser && (
           <Textarea
             value={option.blacklist}
-            placeholder={api.i18n.getMessage('list_rule')}
+            placeholder={api.i18n.getMessage('blacklist_rule')}
             onChange={val => handleChange('blacklist', val)}
           >
             {api.i18n.getMessage('blacklist')}
@@ -64,7 +64,7 @@ export default function(){
         )}
         <Textarea
           value={option.whitelist}
-          placeholder="匹配自动开启"
+          placeholder={api.i18n.getMessage('whitelist_rule')}
           onChange={val => handleChange('whitelist', val)}
         >
           {api.i18n.getMessage('whitelist')}
@@ -76,10 +76,15 @@ export default function(){
       </h3>
       <div className="option-list">
         <Link url="https://github.com/hewenguang/circle/issues">{api.i18n.getMessage('feedback')}</Link>
-        <Link url="https://github.com/hewenguang/circle/wiki/Circle-%E9%98%85%E8%AF%BB%E6%A8%A1%E5%BC%8F%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B">{api.i18n.getMessage('usage')}</Link>
+        <Link url="https://ranhe.xyz/circle-usage/">{api.i18n.getMessage('usage')}</Link>
         <Link url="https://github.com/hewenguang/circle">{api.i18n.getMessage('source_code')}</Link>
         <div className="option-item option-donate">{api.i18n.getMessage('donate')}<img src="../assets/img/donate.jpg" /></div>
-        <div className="option-item">{api.i18n.getMessage('contact')}<br />{api.i18n.getMessage('discussion_group')}</div>
+        <div className="option-item">
+          {api.i18n.getMessage('contact')}
+          <div className="option-buttons">
+            {api.i18n.getMessage('discussion_group')}
+          </div>
+        </div>
       </div>
     </div>
   );

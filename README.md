@@ -1,4 +1,4 @@
-# 让网页赏心悦目、让阅读回归初心 - Circle (阅读模式｜read mode)
+# 让网页赏心悦目、让阅读回归初心 - Circle 阅读模式 | read mode
 
 广告太多分散注意力、配色太丑不忍直视、字体太小看不清、排版太乱找不到正文，阅读真的需要这么困难吗？有没有产品可以把网页中的内容提取出来重新整理，渲染成更方便阅读的排版界面呢？
 
@@ -52,8 +52,6 @@ http://www.shb.cas.cn/kjjz2016/201607/t20160712_4639424.html
 
 ## 问题反馈
 
-QQ 讨论组：605710052
-
 ![Circle 讨论组](https://ranhe.xyz/post-images/1614838148943.jpg)
 
 遇到任何问题或者产品缺陷可以在 https://github.com/hewenguang/circle/issues 提 issue
@@ -62,6 +60,6 @@ QQ 讨论组：605710052
 
 ## 支持我
 
-万水千山总关情，请我喝杯咖啡 ☕️ 可还行？
+万水千山总关情，请我喝杯 ☕️ 可还行？
 
 ![捐赠 Circle](https://ranhe.xyz/post-images/donate.jpg)

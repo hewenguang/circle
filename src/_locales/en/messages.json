@@ -41,8 +41,11 @@
   "hide_paper":{
     "message": "Cancel paper effect"
   },
-  "list_rule":{
-    "message": "One URL or domain name per line"
+  "whitelist_rule":{
+    "message": "Match automatically open, a line of a web address or domain name"
+  },
+  "blacklist_rule":{
+    "message": "If it is enabled by default, matching is forbidden, one URL or domain name per line"
   },
   "help_center":{
     "message": "Help Center"
@@ -66,7 +69,7 @@
     "message": "My wechat: hewenguang_fe"
   },
   "discussion_group":{
-    "message": "Join QQ discussion group: 605710052 to get the latest information"
+    "message": "QQ discussion group: 605710052"
   },
   "error_msg":{
     "message":"Data is abnormal, please try again later"
