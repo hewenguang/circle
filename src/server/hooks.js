@@ -112,17 +112,17 @@ export default function(app){
         callback('not find action');
     }
   });
+  const defaultTheme = {
+    width:"680px",
+    indent:'0em',
+    size:'20px',
+    spacing:'0px',
+    blockspacing:'32px',
+    align:'left',
+    font:'default',
+    lineheight:'1.8',
+  };
   app.addAction('reset-theme', function(callback){
-    const defaultTheme = {
-      width:"680px",
-      indent:'0em',
-      size:'20px',
-      spacing:'0px',
-      blockspacing:'32px',
-      align:'left',
-      font:'default',
-      lineheight:'1.8',
-    };
     optionTable.add('theme', defaultTheme, function(){
       callback && callback(null, defaultTheme);
     });
@@ -193,7 +193,7 @@ export default function(app){
       return;
     }
     // 写入初始主题
-    optionTable.add('theme', {
+    optionTable.add('theme', Object.assign(defaultTheme, {
       preset:'light',
       custom: {
         'color-red':27,
@@ -206,7 +206,7 @@ export default function(app){
         'bgcolor-green':255,
         'bgcolor-blue':255,
       }
-    });
+    }));
     api.runtime.setUninstallURL('https://ranhe.xyz/circle-uninstall');
     app.doAction('open-option-page');
   });

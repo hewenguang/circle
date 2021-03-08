@@ -33,13 +33,13 @@
     "message": "If it is enabled by default, matching is forbidden, one URL or domain name per line"
   },
   "auto_open":{
-    "message": "Automatically open"
+    "message": "The article page opens automatically"
   },
   "ignore":{
     "message": "Exclusion rule"
   },
   "ignore_rule":{
-    "message": "If it is enabled by default, matching is forbidden, one URL or domain name per line"
+    "message": "In the case of automatic opening, matching is forbidden, one URL or domain name per line"
   },
   "help_center":{
     "message": "Help Center"

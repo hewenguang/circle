@@ -12,7 +12,7 @@ app.loadPlugin('message');
 app.addAction('circle-focus', function(){
   app.loadPlugin('focus');
 });
-// 快捷键 cc 设置 bug ： ec 也会触发
+// 快捷键 cc 设置
 app.addAction('double-keyup', function(keyCode){
   if(keyCode !== 70){
     return;

@@ -33,13 +33,13 @@
     "message": "匹配到禁止处理，一行一个网址或域名"
   },
   "auto_open":{
-    "message": "默认开启"
+    "message": "文章页面自动开启"
   },
   "ignore":{
     "message": "排除规则"
   },
   "ignore_rule":{
-    "message": "默认开启的情况下匹配则禁止开启，一行一个网址或域名"
+    "message": "自动开启的情况下匹配则禁止开启，一行一个网址或域名"
   },
   "help_center":{
     "message": "帮助中心"
