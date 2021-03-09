@@ -5,11 +5,14 @@
   "description":{
     "message": "Make webpages pleasing to the eye and return reading to the original intention"
   },
-  "contextMenuName":{
+  "contextmenu_name":{
     "message": "Circle"
   },
-  "contextMenufocus":{
+  "contextmenu_focus":{
     "message": "Focus mode"
+  },
+  "focus_message":{
+    "message": "Move the mouse, click to select, click the blank area or the shortcut key ESC to cancel"
   },
   "nextpage_loading":{
     "message":"The next page is parsed successfully, and the automatic loading starts"
@@ -118,6 +121,9 @@
   },
   "align_justify":{
     "message": "Align both sides"
+  },
+  "font_default": {
+    "message": "default"
   },
   "font_simhei": {
     "message": "SimHei"

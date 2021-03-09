@@ -6,7 +6,7 @@ export default function(){
 
   useEffect(() => {
     get('option', 'version').then(data => {
-      setVersion(`${api.i18n.getMessage('contextMenuName')} v${data}`);
+      setVersion(`${api.i18n.getMessage('contextmenu_name')} v${data}`);
     });
   }, []);
 

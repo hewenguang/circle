@@ -12,11 +12,11 @@ app.loadPlugin('message');
 app.addAction('circle-focus', function(){
   app.loadPlugin('focus');
 });
-// 快捷键 cc 设置
+// 快捷键 ff 设置
 app.addAction('double-keyup', function(keyCode){
   if(keyCode !== 70){
     return;
   }
+  api.send('analytics-click', {event: 'double-keyup-f'});
   app.loadPlugin('focus');
-  app.doAction('focus');
 });

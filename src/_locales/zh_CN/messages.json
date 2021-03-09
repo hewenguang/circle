@@ -5,11 +5,14 @@
   "description":{
     "message": "让网页赏心悦目、让阅读回归初心。Circle 提供更隐私、更轻松、更舒适的阅读体验"
   },
-  "contextMenuName":{
+  "contextmenu_name":{
     "message": "Circle"
   },
-  "contextMenufocus":{
+  "contextmenu_focus":{
     "message": "聚焦模式"
+  },
+  "focus_message":{
+    "message": "移动鼠标点击选取，点击空白区域或者快捷键 esc 取消"
   },
   "nextpage_loading":{
     "message":"下一页解析成功，开始自动加载"
@@ -118,6 +121,9 @@
   },
   "align_justify":{
     "message": "两边对齐"
+  },
+  "font_default": {
+    "message": "系统默认"
   },
   "font_simhei": {
     "message": "黑体"

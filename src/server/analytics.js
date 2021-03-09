@@ -11,5 +11,6 @@ export default function(app){
   app.addAction('analytics-click', function(callback, {request}){
     const event = request.event;
     utils.isString(event) && ga('send', 'event', event, 'click');
+    callback && callback();
   });
 }

@@ -27,18 +27,13 @@ export default function(){
 
   return (
     <div className="option-list">
-      <Switch
-        value={option.hidepaper}
-        onChange={val => handleChange('hidepaper', val)}
+      <Textarea
+        value={option.whitelist}
+        placeholder={api.i18n.getMessage('whitelist_rule')}
+        onChange={val => handleChange('whitelist', val)}
       >
-        {api.i18n.getMessage('hide_paper')}
-      </Switch>
-      <Switch
-        value={option.disable_nextpage}
-        onChange={val => handleChange('disable_nextpage', val)}
-      >
-        {api.i18n.getMessage('disable_nextpage')}
-      </Switch>
+        {api.i18n.getMessage('whitelist')}
+      </Textarea>
       <Switch
         value={option.parser}
         onChange={val => handleChange('parser', val)}
@@ -55,13 +50,18 @@ export default function(){
           {api.i18n.getMessage('ignore')}
         </Textarea>
       )}
-      <Textarea
-        value={option.whitelist}
-        placeholder={api.i18n.getMessage('whitelist_rule')}
-        onChange={val => handleChange('whitelist', val)}
+      <Switch
+        value={option.hidepaper}
+        onChange={val => handleChange('hidepaper', val)}
       >
-        {api.i18n.getMessage('whitelist')}
-      </Textarea>
+        {api.i18n.getMessage('hide_paper')}
+      </Switch>
+      <Switch
+        value={option.disable_nextpage}
+        onChange={val => handleChange('disable_nextpage', val)}
+      >
+        {api.i18n.getMessage('disable_nextpage')}
+      </Switch>
       {/* <Textarea
         value={option.blacklist}
         placeholder={api.i18n.getMessage('blacklist_rule')}

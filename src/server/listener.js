@@ -1,10 +1,10 @@
 export default function(){
   api.contextMenus.create({
-    title: api.i18n.getMessage('contextMenuName'),
+    title: api.i18n.getMessage('contextmenu_name'),
     id: 'circle',
   });
   api.contextMenus.create({
-    title: api.i18n.getMessage('contextMenufocus'),
+    title: api.i18n.getMessage('contextmenu_focus'),
     parentId:'circle',
     id: 'circle-focus',
     onclick: (info, tab) => {
