@@ -33,13 +33,13 @@
     "message": "Whitelist"
   },
   "whitelist_rule":{
-    "message": "Match automatically open, a line of a web address or domain name"
+    "message": "Match automatically open, a line of a web address or domain name. For example: ranhe.xyz"
   },
   "blacklist":{
     "message": "Blacklist"
   },
   "blacklist_rule":{
-    "message": "If it is enabled by default, matching is forbidden, one URL or domain name per line"
+    "message": "If it is enabled by default, matching is forbidden, one URL or domain name per line. For example: ranhe.xyz"
   },
   "auto_open":{
     "message": "The article page opens automatically"
@@ -48,7 +48,7 @@
     "message": "Exclusion rule"
   },
   "ignore_rule":{
-    "message": "In the case of automatic opening, matching is forbidden, one URL or domain name per line"
+    "message": "In the case of automatic opening, matching is forbidden, one URL or domain name per line. For example: ranhe.xyz"
   },
   "help_center":{
     "message": "Help Center"

@@ -33,13 +33,13 @@
     "message": "白名单"
   },
   "whitelist_rule":{
-    "message": "匹配自动开启，一行一个网址或域名"
+    "message": "匹配自动开启，一行一个网址或域名。如：ranhe.xyz"
   },
   "blacklist":{
     "message": "黑名单"
   },
   "blacklist_rule":{
-    "message": "匹配到禁止处理，一行一个网址或域名"
+    "message": "匹配到禁止处理，一行一个网址或域名。如：ranhe.xyz"
   },
   "auto_open":{
     "message": "文章页面自动开启"
@@ -48,7 +48,7 @@
     "message": "排除规则"
   },
   "ignore_rule":{
-    "message": "自动开启的情况下匹配则禁止开启，一行一个网址或域名"
+    "message": "自动开启的情况下匹配则禁止开启，一行一个网址或域名。如：ranhe.xyz"
   },
   "help_center":{
     "message": "帮助中心"
