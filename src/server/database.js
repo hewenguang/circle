@@ -123,6 +123,13 @@ export default function(app){
   })
   api.runtime.onInstalled.addListener(details => {
     app.doAction('analytics-click', () => {}, {request:{event: details.reason}});
+    if (details.reason === 'update') {
+      optionTable.remove('version', function(){
+        pluginTable.remove('loading', function(){
+          app.doAction('open-option-page');
+        });
+      });
+    }
     if(details.reason !== 'install') {
       return;
     }
