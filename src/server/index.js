@@ -1,5 +1,7 @@
 import Server from './includes/class.server';
 import hooks from './hooks';
+import database from './database';
+import listener from './listener';
 import analytics from './analytics';
 
 window.app = new Server({
@@ -11,6 +13,9 @@ window.app = new Server({
 
 // 挂载勾子
 hooks(app);
+database(app);
+listener();
+
 //数据统计
 analytics(app);
 

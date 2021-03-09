@@ -1,5 +1,6 @@
 import cx from 'classnames';
 import React, { useState } from 'react';
+import Footer from './footer';
 import Basic from  './module/basic';
 import Help from './module/help';
 
@@ -30,6 +31,7 @@ export default function(){
         ))}
       </ul>
       {list[tab].value}
+      <Footer />
     </div>
   );
 }

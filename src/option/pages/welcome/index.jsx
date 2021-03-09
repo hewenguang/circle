@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Button from 'src/option/components/button';
 import Loading from 'src/option/components/loading';
 import Progress from 'src/option/components/progress';
-import { add } from '../action/table';
 import { getPlugins } from '../action/index';
 import { updatePlugins } from '../action/plugin';
 import './index.less';
@@ -25,7 +24,7 @@ export default function(){
         if(error){
           setStatus(error);
         } else {
-          add('option', 'version', '1.0.0').then(function(){
+          api.send('write-version',function(){
             setStatus('success');
           });
         }
