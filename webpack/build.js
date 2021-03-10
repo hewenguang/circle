@@ -4,7 +4,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin =  require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const { getHTMLPlugins, getOutput, getCopyPlugins, getZipPlugin, getEntry } = require('./utils');
+const { getHTMLPlugins, getOutput, getCopyPlugins, getZipPlugin, getEntry, getFirefoxCopyPlugins } = require('./utils');
 
 const generalConfig = {
   mode: 'production',
@@ -79,8 +79,8 @@ const generalConfig = {
 module.exports = [
   {
     ...generalConfig,
-    entry: getEntry(config.chromePath, config.tempDirectory),
     output: getOutput('chrome', config.tempDirectory),
+    entry: getEntry(config.chromePath, config.tempDirectory),
     plugins: [
       new CleanWebpackPlugin(),
       ...getHTMLPlugins('chrome', config.tempDirectory, config.chromePath),
@@ -88,29 +88,35 @@ module.exports = [
       new MiniCssExtractPlugin({
         filename: '[name].css',
       }),
-      getZipPlugin('circle', config.distDirectory),
+      getZipPlugin('chrome', config.distDirectory),
     ],
   },
-  // {
-  //   ...generalConfig,
-  //   output: getOutput('opera', config.tempDirectory),
-  //   entry: getEntry(config.operaPath),
-  //   plugins: [
-  //     new CleanWebpackPlugin(),
-  //     ...getHTMLPlugins('opera', config.tempDirectory, config.operaPath),
-  //     ...getCopyPlugins('opera', config.tempDirectory, config.operaPath),
-  //     getZipPlugin('opera', config.distDirectory),
-  //   ],
-  // },
-  // {
-  //   ...generalConfig,
-  //   entry: getEntry(config.firefoxPath),
-  //   output: getOutput('firefox', config.tempDirectory),
-  //   plugins: [
-  //     new CleanWebpackPlugin(),
-  //     ...getHTMLPlugins('firefox', config.tempDirectory, config.firefoxPath),
-  //     ...getFirefoxCopyPlugins('firefox', config.tempDirectory, config.firefoxPath),
-  //     getZipPlugin('firefox', config.distDirectory),
-  //   ],
-  // },
+  {
+    ...generalConfig,
+    output: getOutput('opera', config.tempDirectory),
+    entry: getEntry(config.operaPath, config.tempDirectory),
+    plugins: [
+      new CleanWebpackPlugin(),
+      ...getHTMLPlugins('opera', config.tempDirectory, config.operaPath),
+      ...getCopyPlugins('opera', config.tempDirectory, config.operaPath),
+      new MiniCssExtractPlugin({
+        filename: '[name].css',
+      }),
+      getZipPlugin('opera', config.distDirectory),
+    ],
+  },
+  {
+    ...generalConfig,
+    output: getOutput('firefox', config.tempDirectory),
+    entry: getEntry(config.firefoxPath, config.tempDirectory),
+    plugins: [
+      new CleanWebpackPlugin(),
+      ...getHTMLPlugins('firefox', config.tempDirectory, config.firefoxPath),
+      ...getFirefoxCopyPlugins('firefox', config.tempDirectory, config.firefoxPath),
+      new MiniCssExtractPlugin({
+        filename: '[name].css',
+      }),
+      getZipPlugin('firefox', config.distDirectory),
+    ],
+  },
 ];

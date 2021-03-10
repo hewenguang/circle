@@ -1,45 +1,48 @@
 {
-  "name": "__MSG_appName__",
-  "version": "0.0.1",
+  "name": "__MSG_name__",
+  "version": "1.0.0",
   "manifest_version": 2,
-  "description": "__MSG_appDescription__",
+  "description": "__MSG_description__",
   "icons": {
-    "16": "assets/icons/icon-16.png",
-    "128": "assets/icons/icon-128.png"
+    "16": "assets/icon/16/enable.png",
+    "32": "assets/icon/32/enable.png",
+    "48": "assets/icon/48.png",
+    "128": "assets/icon/128.png"
   },
   "default_locale": "en",
+  "options_ui": {
+    "page": "option/index.html",
+    "open_in_tab": true,
+    "browser_style": true
+  },
+  "homepage_url": "https://ranhe.xyz/circle/",
   "content_scripts": [{
+    "all_frames": false,
+    "run_at": "document_end",
     "matches": [
       "http://*/*",
       "https://*/*"
     ],
-    "js": [
-      "app/app.js",
-      "plugins/plugins.js"
-    ]}
-  ],
+    "js": ["client/index.js"]
+  }],
   "background": {
-    "scripts": [
-      "server/server.js"
-    ]
+    "scripts": ["server/index.js"],
+    "persistent": true
   },
   "permissions": [
-    "tabs",
-    "storage",
     "contextMenus",
+    "webRequest",
+    "webRequestBlocking",
     "http://*/*",
     "https://*/*"
   ],
-  "web_accessible_resources": [
-    "app/app.css"
-  ],
   "browser_action": {
     "default_icon": {
-      "19": "assets/icons/icon-19.png",
-      "38": "assets/icons/icon-38.png"
-    },
-    "default_title": "Read Better"
+      "16": "assets/icon/16/disable.png",
+      "32": "assets/icon/32/disable.png"
+    }
   },
+  "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
   "applications": {
     "gecko": {
       "id": "wenguang.fe@gmail.com"

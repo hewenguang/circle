@@ -1,7 +1,7 @@
 const path = require('path');
 const config = require('./config.json');
 const MiniCssExtractPlugin =  require('mini-css-extract-plugin');
-const { getHTMLPlugins, getOutput, getCopyPlugins, getEntry } = require('./utils');
+const { getHTMLPlugins, getOutput, getCopyPlugins, getEntry, getFirefoxCopyPlugins } = require('./utils');
 
 const generalConfig = {
   mode: 'development',
@@ -59,8 +59,8 @@ const generalConfig = {
 module.exports = [
   {
     ...generalConfig,
-    entry: getEntry(config.chromePath, config.devDirectory),
     output: getOutput('chrome', config.devDirectory),
+    entry: getEntry(config.chromePath, config.devDirectory),
     plugins: [
       ...getHTMLPlugins('chrome', config.devDirectory, config.chromePath),
       ...getCopyPlugins('chrome', config.devDirectory, config.chromePath),
@@ -69,22 +69,28 @@ module.exports = [
       }),
     ],
   },
-  // {
-  //   ...generalConfig,
-  //   entry: getEntry(config.operaPath),
-  //   output: getOutput('opera', config.devDirectory),
-  //   plugins: [
-  //     ...getHTMLPlugins('opera', config.devDirectory, config.operaPath),
-  //     ...getCopyPlugins('opera', config.devDirectory, config.operaPath),
-  //   ],
-  // },
-  // {
-  //   ...generalConfig,
-  //   entry: getEntry(config.firefoxPath),
-  //   output: getOutput('firefox', config.devDirectory),
-  //   plugins: [
-  //     ...getFirefoxCopyPlugins('firefox', config.devDirectory, config.firefoxPath),
-  //     ...getFirefoxCopyPlugins('firefox', config.devDirectory, config.firefoxPath),
-  //   ],
-  // },
+  {
+    ...generalConfig,
+    output: getOutput('opera', config.devDirectory),
+    entry: getEntry(config.operaPath, config.devDirectory),
+    plugins: [
+      ...getHTMLPlugins('opera', config.devDirectory, config.operaPath),
+      ...getCopyPlugins('opera', config.devDirectory, config.operaPath),
+      new MiniCssExtractPlugin({
+        filename: '[name].css',
+      }),
+    ],
+  },
+  {
+    ...generalConfig,
+    output: getOutput('firefox', config.devDirectory),
+    entry: getEntry(config.firefoxPath, config.devDirectory),
+    plugins: [
+      ...getHTMLPlugins('firefox', config.devDirectory, config.operaPath),
+      ...getFirefoxCopyPlugins('firefox', config.devDirectory, config.firefoxPath),
+      new MiniCssExtractPlugin({
+        filename: '[name].css',
+      }),
+    ],
+  },
 ];

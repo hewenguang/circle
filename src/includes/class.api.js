@@ -3,20 +3,7 @@ import * as utils from './utils';
 export default class API{
   constructor() {
     utils.each(['alarms','bookmarks','browserAction','commands','contextMenus','cookies','downloads','events','extension','extensionTypes','history','i18n','idle','notifications','pageAction','runtime','storage','tabs','webNavigation','webRequest', 'windows'], item => {
-      this[item] = null;
-      try{
-        chrome && chrome[item] && (this[item] = chrome[item]);
-        window[item] && (this[item] = window[item]);
-        if(!browser){
-          return;
-        }
-        browser[item] && (this[item] = browser[item]);
-        browser.extension && browser.extension[item] && (this[item] = browser.extension[item]);
-        browser.runtime && (this.runtime = browser.runtime);
-        browser.browserAction && (this.browserAction = browser.browserAction);
-      }catch(e){
-        //
-      }
+      this[item] = chrome[item];
     });
   }
 
