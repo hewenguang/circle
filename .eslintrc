@@ -10,7 +10,7 @@
   },
   "globals": {
     "chrome": true,
-    "browser": true,
+    "App": true,
     "app": true,
     "api": true,
     "utils": true,

@@ -1,6 +1,6 @@
 {
   "name": "__MSG_name__",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 2,
   "description": "__MSG_description__",
   "icons": {
@@ -23,10 +23,16 @@
       "http://*/*",
       "https://*/*"
     ],
-    "js": ["client/index.js"]
+    "js": [
+      "includes/index.js",
+      "client/index.js"
+    ]
   }],
   "background": {
-    "scripts": ["server/index.js"],
+    "scripts": [
+      "includes/index.js",
+      "server/index.js"
+    ],
     "persistent": true
   },
   "permissions": [
@@ -42,7 +48,6 @@
       "32": "assets/icon/32/disable.png"
     }
   },
-  "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
   "applications": {
     "gecko": {
       "id": "wenguang.fe@gmail.com"

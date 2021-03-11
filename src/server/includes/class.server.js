@@ -1,10 +1,4 @@
-import API from 'src/includes/class.api';
-import App from 'src/includes/class.app';
-import * as utils from 'src/includes/utils';
 import Database from './class.database';
-
-window.api = new API;
-window.utils = utils;
 
 export default class Server extends App{
   constructor(cfgs){

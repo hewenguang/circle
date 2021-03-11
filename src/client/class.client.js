@@ -1,21 +1,16 @@
-import API from 'src/includes/class.api';
-import App from 'src/includes/class.app';
-import * as utils from 'src/includes/utils';
 import * as dom from './dom';
 
-window.api = new API;
-window.utils = utils;
 window.dom = dom;
 
 export default class Client extends App {
   constructor(){
     super();
+    // 加载的插件
+    this._plugins = [];
     // 缓存数据
     this._cache = {
       // 当前主题设置
       theme: {},
-      // 加载的插件
-      plugins: {},
     };
     api.listen((request, sender, fn) => {
       const { action } = request;
@@ -48,17 +43,17 @@ export default class Client extends App {
   }
 
   loadPlugin(name, callback){
-    if(this._cache.plugins[name]){
-      callback && callback(this._cache.plugins[name]);
+    if(this._plugins.includes(name)){
+      callback && callback(name);
       app.doAction(`load-plugin-${name}`);
     } else {
-      api.send('plugin', { execute: 'load', name }, ({error, data}) => {
+      api.send('plugin', { execute: 'load', name }, ({error}) => {
         if(error){
           this.doAction('error', error);
           return;
         }
-        this._cache.plugins[name] = data;
-        callback && callback(data);
+        this._plugins.push(name);
+        callback && callback(name);
         app.doAction(`load-plugin-${name}`);
       });
     }

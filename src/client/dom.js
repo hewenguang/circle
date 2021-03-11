@@ -1,5 +1,3 @@
-import * as utils from 'src/includes/utils';
-
 export function tag(node, tagName){
   return node && node.tagName && utils.toLower(node.tagName) === tagName;
 }

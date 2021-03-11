@@ -1,37 +1,27 @@
-import cx from 'classnames';
-import React, { useState } from 'react';
+import React from 'react';
+import Tabs from '../components/tabs';
 import Footer from './footer';
 import Basic from  './module/basic';
 import Help from './module/help';
 
 export default function(){
-  const [ tab, setTab ] = useState('basic');
-  const list = {
-    basic: {
-      title: api.i18n.getMessage('basic_setting'),
-      value: <Basic />
-    },
-    help: {
-      title: api.i18n.getMessage('help_center'),
-      value: <Help />
-    },
-  };
 
   return (
-    <div className="option-root">
-      <ul className="option-header">
-        {Object.keys(list).map(key => (
-          <li
-            key={key}
-            onClick={() => setTab(key)}
-            className={cx({active: key === tab})}
-          >
-            {list[key].title}
-          </li>
-        ))}
-      </ul>
-      {list[tab].value}
+    <>
+      <Tabs
+        className="option-root"
+        options={{
+          basic: {
+            title: api.i18n.getMessage('basic_setting'),
+            value: <Basic />
+          },
+          help: {
+            title: api.i18n.getMessage('help_center'),
+            value: <Help />
+          },
+        }}
+      />
       <Footer />
-    </div>
+    </>
   );
 }

@@ -1,18 +1,4 @@
-感谢大家的支持，本来只是上线看看效果，没想到大家如此的喜欢，甚至于有热心网友自觉为我推广，接着各种平台开始出现 Circle 的身影。我是开发者染河，我会一直更新下去
-
-## 目前取得成绩
-
-上线当天 Chrome 扩展市场 **360** 安装量，第二天 **1000+** 安装量
-
-上线第二天被小众软件精选
-
-![Circle 阅读模式被小众软件精选](https://ranhe.xyz/post-images/1615272351928.jpg)
-
-除了小众软件和 V2ex 分别发了一个帖子之外没有做任何推广的情况下，搜索 “**Circle 阅读模式**” 已经可以看到好多网站信息
-
-![Circle 阅读模式搜索结果](https://ranhe.xyz/post-images/1615272342628.jpg)
-
-## Circle 阅读模式介绍
+## Circle 阅读模式 – 为网页适配更舒适的阅读模式，支持深色模式
 
 广告太多分散注意力、配色太丑不忍直视、字体太小看不清、排版太乱找不到正文，阅读真的需要这么困难吗？有没有产品可以把网页中的内容提取出来重新整理，渲染成更方便阅读的排版界面呢？
 
@@ -39,10 +25,6 @@ http://www.shb.cas.cn/kjjz2016/201607/t20160712_4639424.html
 ![Circle 阅读模式效果对比图](https://ranhe.xyz/post-images/1615281038997.jpg)
 
 上面的网址内容结构不够规范，对于大部分产品都是从中间部分开始展示，漏掉了大段的前半部分正文（  Safari 也不例外）
-
- http://new.rushi.net/Home/Works/mobilework/id/50657.html
-
-上面的网址内容大多是图片，大部分产品都无法正常识别
 
 ## 绚丽多彩的内置主题
 
@@ -127,8 +109,25 @@ QQ 讨论组：605710052
 
 ![Circle 讨论组](https://ranhe.xyz/post-images/1614838148943.jpg)
 
+## 相关链接
+
+- [官方网站](https://ranhe.xyz/circle/)
+- [安装指引](https://ranhe.xyz/circle-install/)
+- [使用指南](https://ranhe.xyz/circle-usage/)
+- [Microsoft Edge 浏览器扩展市场](https://microsoftedge.microsoft.com/addons/detail/circle-%E9%98%85%E8%AF%BB%E6%A8%A1%E5%BC%8F%EF%BD%9Creader-mode/hjkjecmcifblnghjpcjaofpakjpgfjio) 
+- [Chrome 浏览器扩展市场](https://chrome.google.com/webstore/detail/circle-reader-mode/dhpfcgilccfkodnhbllpiaabofjbjcbg)
+
 ## 支持我
 
-万水千山总关情，请我喝杯 ☕️ 可还行？
+如果 Circle 确实帮助到你，不如请我喝一杯 ☕️ 以示鼓励和支持（请不要超过你的早餐价格）。如果囊中羞涩，请 start 或者在社交平台发一遍文章谈谈使用感受，让更多人了解 Circle，你的认可是对我最大的鼓励
 
 ![捐赠 Circle](https://ranhe.xyz/post-images/donate.jpg)
+
+## 开发和构建
+
+- 执行 `yarn` 安装依赖
+
+- 执行 `yarn dev` 进行开发
+
+- 执行 `yarn build` 进行版本构建
+

@@ -1,5 +1,3 @@
-import * as utils from 'src/includes/utils';
-
 export default class Database{
   constructor(name, tables = []){
     this._indexedDB = window.indexedDB || window.webkitindexedDB;

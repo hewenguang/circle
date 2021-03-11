@@ -83,13 +83,19 @@ export default function(app){
         } else {
           cachePlugin = app._cache.plugins[name];
           if(cachePlugin){
-            callback(null, cachePlugin);
+            cachePlugin.css && api.tabs.insertCSS(sender.tab.id, {
+              code: cachePlugin.css,
+              allFrames: false,
+              matchAboutBlank: false,
+              runAt: 'document_idle',
+            });
             cachePlugin.js && api.tabs.executeScript(sender.tab.id, {
               code: cachePlugin.js,
               allFrames: false,
               matchAboutBlank: false,
               runAt: 'document_idle',
             });
+            callback();
           } else {
             pluginTable.get(name, (error, data = {}) => {
               if(error){
@@ -98,14 +104,20 @@ export default function(app){
               }
               // 缓存插件
               app._cache.plugins[name] = data;
-              callback(null, data);
+              data.css && api.tabs.insertCSS(sender.tab.id, {
+                code: data.css,
+                allFrames: false,
+                matchAboutBlank: false,
+                runAt: 'document_idle',
+              });
               data.js && api.tabs.executeScript(sender.tab.id, {
                 code: data.js,
                 allFrames: false,
                 matchAboutBlank: false,
                 runAt: 'document_idle',
               });
-            })
+              callback();
+            });
           }
         }
         break;  
@@ -123,13 +135,11 @@ export default function(app){
   })
   api.runtime.onInstalled.addListener(details => {
     app.doAction('analytics-click', () => {}, {request:{event: details.reason}});
-    if (details.reason === 'update') {
-      optionTable.remove('version', function(){
-        pluginTable.remove('loading', function(){
-          app.doAction('open-option-page');
-        });
-      });
-    }
+    // if (details.reason === 'update') {
+    //   optionTable.remove('version', function(){
+    //     app.doAction('open-option-page');
+    //   });
+    // }
     if(details.reason !== 'install') {
       return;
     }

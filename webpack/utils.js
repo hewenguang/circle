@@ -24,6 +24,7 @@ const getEntry = (sourceDir = 'src', outputDir = 'dev') => {
     'option/index': path.resolve(__dirname, `${sourceDir}/option/index.jsx`),
     'client/index': path.resolve(__dirname, `${sourceDir}/client/index.js`),
     'server/index': path.resolve(__dirname, `${sourceDir}/server/index.js`),
+    'includes/index': path.resolve(__dirname, `${sourceDir}/includes/index.js`),
   };
   if(outputDir === '../dev'){
     entries['server/hotreload'] = path.resolve(__dirname, `${sourceDir}/server/hot-reload.js`);

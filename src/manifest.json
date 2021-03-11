@@ -18,10 +18,16 @@
       "http://*/*",
       "https://*/*"
     ],
-    "js": ["client/index.js"]
+    "js": [
+      "includes/index.js",
+      "client/index.js"
+    ]
   }],
   "background": {
-    "scripts": ["server/index.js"],
+    "scripts": [
+      "includes/index.js",
+      "server/index.js"
+    ],
     "persistent": true
   },
   "permissions": [

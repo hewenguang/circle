@@ -21,3 +21,10 @@ analytics(app);
 
 // 启动应用
 app.init();
+
+
+// chrome.webNavigation.onCompleted.addListener(function(details) {
+//   if(details.frameId === 0) {
+//       chrome.tabs.executeScript(details.tabId, {"file": "content.js"}); 
+//   }
+// });
