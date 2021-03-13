@@ -65,9 +65,13 @@ LI Yi：很快很简洁，感谢开发者！非常期待黑白名单~
 
 ## 安装指引
 
-目前已经上架 chrome 扩展市场，第三方扩展程序网站陆续上架中，其他浏览器暂未支持
+目前已经上架 Chrome、Firfox 和 Microsoft Edge 扩展市场，其他平台陆续上架中
 
-（最新版还在审核，建议直接下载[安装包](https://ranhe.xyz/post-images/circle.zip)安装）可以访问外网的同学可以点击[这里](https://chrome.google.com/webstore/detail/circle-reader-mode/dhpfcgilccfkodnhbllpiaabofjbjcbg)进入扩展市场即可完成下载安装
+进入[Microsoft Edge 浏览器扩展市场](https://microsoftedge.microsoft.com/addons/detail/circle-%E9%98%85%E8%AF%BB%E6%A8%A1%E5%BC%8F%EF%BD%9Creader-mode/hjkjecmcifblnghjpcjaofpakjpgfjio) 安装
+
+进入[Firefox 浏览器扩展市场](https://addons.mozilla.org/zh-CN/firefox/addon/circle-reading-mode/) 安装
+
+进入[Chrome 浏览器扩展市场](https://chrome.google.com/webstore/detail/circle-reader-mode/dhpfcgilccfkodnhbllpiaabofjbjcbg)下载
 
 无法访问外网的同学可以通过[这里](https://ranhe.xyz/post-images/circle.zip)下载，下载之后按照如下三步指引进行安装
 
@@ -115,6 +119,7 @@ QQ 讨论组：605710052
 - [安装指引](https://ranhe.xyz/circle-install/)
 - [使用指南](https://ranhe.xyz/circle-usage/)
 - [Microsoft Edge 浏览器扩展市场](https://microsoftedge.microsoft.com/addons/detail/circle-%E9%98%85%E8%AF%BB%E6%A8%A1%E5%BC%8F%EF%BD%9Creader-mode/hjkjecmcifblnghjpcjaofpakjpgfjio) 
+- [Firefox 浏览器扩展市场](https://addons.mozilla.org/zh-CN/firefox/addon/circle-reading-mode/) 安装
 - [Chrome 浏览器扩展市场](https://chrome.google.com/webstore/detail/circle-reader-mode/dhpfcgilccfkodnhbllpiaabofjbjcbg)
 
 ## 支持我

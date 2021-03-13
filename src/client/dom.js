@@ -44,13 +44,6 @@ export function remove(node){
   node && node.parentElement && node.parentElement.removeChild(node);
 }
 
-// export function hasAttr(node, attr) {
-//   if (!node || !node.hasAttribute || !utils.isString(attr)){
-//     return;
-//   }
-//   return node.hasAttribute(attr);
-// }
-
 export function getAttr(node, attr) {
   if (!node || !node.getAttribute || !utils.isString(attr)) {
     return;
