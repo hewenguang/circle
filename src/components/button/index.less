@@ -1,4 +1,5 @@
 .cc-button {
+  display: inline-block;
   border: 1px solid var(--cc-border);
   border-radius: 4px;
   color:var(--cc-primary);
@@ -46,7 +47,7 @@
       fill: var(--cc-white);
     }
   }
-  &:disabled, &:disabled:hover{
+  &[disabled], &[disabled]:hover{
     cursor: not-allowed;
     color:#bbbbbb;
     background-color: #eee;

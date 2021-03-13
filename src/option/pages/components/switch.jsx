@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import Switch from 'src/option/components/switch';
+import Switch from 'src/components/switch';
 
 export default function(props){
   const { className, value, onChange, children } = props;

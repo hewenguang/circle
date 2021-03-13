@@ -163,5 +163,14 @@
   },
   "reset_setting": {
     "message": "重置排版"
+  },
+  "no_img_mode": {
+    "message": "无图模式"
+  },
+  "img_center": {
+    "message": "图片居中"
+  },
+  "two_columns": {
+    "message": "两列对开"
   }
 }

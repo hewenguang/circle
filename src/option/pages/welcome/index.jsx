@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Button from 'src/option/components/button';
-import Loading from 'src/option/components/loading';
-import Progress from 'src/option/components/progress';
+import Button from 'src/components/button';
+import Loading from 'src/components/loading';
+import Progress from 'src/components/progress';
 import { getPlugins } from '../action/index';
 import { updatePlugins } from '../action/plugin';
 import './index.less';
@@ -12,14 +12,14 @@ export default function(){
 
   useEffect(() => {
     getPlugins().then(remotes => {
-      const preset = remotes.preset || [];
-      const plugins = (remotes.data || []).filter(item => preset.includes(item.name));
-      if(plugins.length <= 0){
+      const plugins = remotes.data || [];
+      const pluginsLen = plugins.length;
+      if(pluginsLen <= 0){
         setStatus(api.i18n.getMessage('error_msg'));
         return;
       }
       let multiple = 0;
-      const multiplier = 100 / preset.length;
+      const multiplier = 100 / pluginsLen;
       updatePlugins(plugins, function(error){
         if(error){
           setStatus(error);
@@ -54,17 +54,11 @@ export default function(){
           <h1>{api.i18n.getMessage('init_success')}</h1>
           <Button
             type="primary"
-            onClick={() => {
-              location.href = 'https://ranhe.xyz/circle-usage';
-            }}
+            href="https://ranhe.xyz/circle-usage"
           >
             {api.i18n.getMessage('user_guide')}
           </Button>
-          <Button
-             onClick={() => {
-               location.reload();
-             }}
-          >
+          <Button onClick={()=>location.reload()}>
             {api.i18n.getMessage('enter_setting')}
           </Button>
         </>

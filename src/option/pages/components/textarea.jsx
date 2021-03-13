@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import Textarea from  'src/option/components/textarea';
+import Textarea from  'src/components/textarea';
 
 export default function(props){
   const { className, value, onChange, children, placeholder } = props;

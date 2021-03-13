@@ -69,28 +69,28 @@ module.exports = [
       }),
     ],
   },
-  {
-    ...generalConfig,
-    output: getOutput('opera', config.devDirectory),
-    entry: getEntry(config.operaPath, config.devDirectory),
-    plugins: [
-      ...getHTMLPlugins('opera', config.devDirectory, config.operaPath),
-      ...getCopyPlugins('opera', config.devDirectory, config.operaPath),
-      new MiniCssExtractPlugin({
-        filename: '[name].css',
-      }),
-    ],
-  },
-  {
-    ...generalConfig,
-    output: getOutput('firefox', config.devDirectory),
-    entry: getEntry(config.firefoxPath, config.devDirectory),
-    plugins: [
-      ...getHTMLPlugins('firefox', config.devDirectory, config.operaPath),
-      ...getFirefoxCopyPlugins('firefox', config.devDirectory, config.firefoxPath),
-      new MiniCssExtractPlugin({
-        filename: '[name].css',
-      }),
-    ],
-  },
+  // {
+  //   ...generalConfig,
+  //   output: getOutput('opera', config.devDirectory),
+  //   entry: getEntry(config.operaPath, config.devDirectory),
+  //   plugins: [
+  //     ...getHTMLPlugins('opera', config.devDirectory, config.operaPath),
+  //     ...getCopyPlugins('opera', config.devDirectory, config.operaPath),
+  //     new MiniCssExtractPlugin({
+  //       filename: '[name].css',
+  //     }),
+  //   ],
+  // },
+  // {
+  //   ...generalConfig,
+  //   output: getOutput('firefox', config.devDirectory),
+  //   entry: getEntry(config.firefoxPath, config.devDirectory),
+  //   plugins: [
+  //     ...getHTMLPlugins('firefox', config.devDirectory, config.operaPath),
+  //     ...getFirefoxCopyPlugins('firefox', config.devDirectory, config.firefoxPath),
+  //     new MiniCssExtractPlugin({
+  //       filename: '[name].css',
+  //     }),
+  //   ],
+  // },
 ];

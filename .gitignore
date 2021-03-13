@@ -3,4 +3,4 @@ dist
 dev
 temp
 .idea
-plugins
+src/plugins

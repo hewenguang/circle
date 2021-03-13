@@ -1,5 +1,5 @@
 import React from 'react';
-import Tabs from '../components/tabs';
+import Tabs from 'src/components/tabs';
 import Footer from './footer';
 import Basic from  './module/basic';
 import Help from './module/help';

@@ -2,7 +2,7 @@ import Server from './includes/class.server';
 import hooks from './hooks';
 import database from './database';
 import listener from './listener';
-import analytics from './analytics';
+// import analytics from './analytics';
 
 window.app = new Server({
   database: {
@@ -17,7 +17,7 @@ database(app);
 listener();
 
 //数据统计
-analytics(app);
+// analytics(app);
 
 // 启动应用
 app.init();

@@ -163,5 +163,14 @@
   },
   "reset_setting": {
     "message": "Reset setting"
+  },
+  "no_img_mode": {
+    "message": "Graph free mode"
+  },
+  "img_center": {
+    "message": "picture centering"
+  },
+  "two_columns": {
+    "message": "Two columns apart"
   }
 }

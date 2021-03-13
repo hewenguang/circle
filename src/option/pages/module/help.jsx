@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Loading from 'src/option/components/loading';
+import Loading from 'src/components/loading';
 
 export default function(){
   const [ loading, setLoading ] = useState(true);

@@ -4,7 +4,22 @@ import Loading from '../loading';
 import './index.less';
 
 export default function(props){
-  const { type, loading, disabled, children, onClick, className, ...resetProps } = props;
+  const { type, href, loading, disabled, children, onClick, className, ...resetProps } = props;
+
+  if(href){
+    return (
+      <a
+        {...resetProps}
+        href={href}
+        target="_blank"
+        disabled={disabled}
+        className={cx('cc-button', className, type)}
+      >
+        {loading && <Loading />}
+        {children}
+      </a>
+    );
+  }
 
   return (
     <button

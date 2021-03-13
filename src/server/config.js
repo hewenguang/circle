@@ -1,5 +1,5 @@
 export const defaultTheme =  {
-  width:"680px",
+  width:"800px",
   indent:'0em',
   size:'20px',
   spacing:'0px',
