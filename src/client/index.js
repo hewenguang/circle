@@ -9,7 +9,7 @@ app.loadPlugin('parser');
 app.loadPlugin('message');
 
 // 加载聚焦模式
-app.addAction('circle-focus', function(){
+app.addAction('menu-focus', function(){
   app.loadPlugin('focus');
 });
 // 快捷键 ff 设置

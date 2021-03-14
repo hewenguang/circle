@@ -1,19 +1,4 @@
 export default function(){
-  api.contextMenus.create({
-    title: api.i18n.getMessage('contextmenu_name'),
-    id: 'circle',
-  });
-  api.contextMenus.create({
-    title: api.i18n.getMessage('contextmenu_focus'),
-    parentId:'circle',
-    id: 'circle-focus',
-    onclick: (info, tab) => {
-      if(info.pageUrl.startsWith('chrome')){
-        return;
-      }
-      api.tabs.sendMessage(tab.id, {action: 'circle-focus'});
-    },
-  });
   // 无法嵌入的网页去除限制响应头
   api.webRequest.onHeadersReceived.addListener(function(details){
     return {responseHeaders: details.responseHeaders.filter(header => ['content-security-policy', 'x-frame-options'].indexOf(header.name.toLowerCase()) < 0)};

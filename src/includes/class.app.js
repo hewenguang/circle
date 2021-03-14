@@ -63,6 +63,7 @@ export default class Hook {
   }
 
   applyFilter(name, ...args){
+    console.log(name);
     if(!utils.isString(name)){
       return;
     }

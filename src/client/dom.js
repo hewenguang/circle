@@ -167,36 +167,36 @@ export function parentExcept(node, callback) {
   // utils.isFunction(parentCallback) && parentCallback(tempNode);
 }
 
-// export function parentBoth(node,target){
-//   for(;node;node = node.parentElement){
-//     if(node.contains(target)){
-//       return node;
-//     }
-//   }
-// }
+export function parentBoth(node,target){
+  for(;node;node = node.parentElement){
+    if(node.contains(target)){
+      return node;
+    }
+  }
+}
 
-// export function getSelector(node, withoutClass, index = 1){
-//   if(!utils.isElement(node)){
-//     console.error('node utils.is valid');
-//     return;
-//   }
-//   const id = node.id;
-//   if (id) {
-//     return `#${id}`;
-//   }
-//   if (tag(node, 'body')){
-//     return 'body';
-//   }
-//   let selector = `> ${utils.toLower(node.tagName)}`;
-//   if(!withoutClass || index <= 1){
-//     const className = node.className.trim();
-//     const classes = className.length > 0 ? className.split(' ') : [];
-//     classes.length > 0 && (selector += `.${classes.join('.')}`);
-//   }
-//   const parentElement = node.parentElement;
-//   if(parentElement){
-//     return getSelector(parentElement, withoutClass, index + 1) + ' ' + selector;
-//   } else {
-//     return selector;
-//   }
-// }
+export function getSelector(node, withoutClass, index = 1){
+  if(!utils.isElement(node)){
+    console.error('node utils.is valid');
+    return;
+  }
+  const id = node.id;
+  if (id) {
+    return `#${id}`;
+  }
+  if (tag(node, 'body')){
+    return 'body';
+  }
+  let selector = `> ${utils.toLower(node.tagName)}`;
+  if(!withoutClass || index <= 1){
+    const className = node.className.trim();
+    const classes = className.length > 0 ? className.split(' ') : [];
+    classes.length > 0 && (selector += `.${classes.join('.')}`);
+  }
+  const parentElement = node.parentElement;
+  if(parentElement){
+    return getSelector(parentElement, withoutClass, index + 1) + ' ' + selector;
+  } else {
+    return selector;
+  }
+}
