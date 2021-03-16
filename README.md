@@ -1,6 +1,6 @@
 ## Circle 阅读模式 – 为网页适配更舒适的阅读模式，支持深色模式
 
-目前已经上架 Chrome、Firfox 和 Microsoft Edge 扩展市场，其他平台陆续上架中。[下载安装](https://ranhe.xyz/circle-install/)
+目前已经上架 Chrome、Firefox 和 Microsoft Edge 扩展市场，其他平台陆续上架中。[下载安装](https://ranhe.xyz/circle-install/)
 
 广告太多分散注意力、配色太丑不忍直视、字体太小看不清、排版太乱找不到正文，阅读真的需要这么困难吗？有没有产品可以把网页中的内容提取出来重新整理，渲染成更方便阅读的排版界面呢？
 
@@ -67,7 +67,7 @@ LI Yi：很快很简洁，感谢开发者！非常期待黑白名单~
 
 ## 安装指引
 
-目前已经上架 Chrome、Firfox 和 Microsoft Edge 扩展市场，其他平台陆续上架中
+目前已经上架 Chrome、Firefox 和 Microsoft Edge 扩展市场，其他平台陆续上架中
 
 进入[Microsoft Edge 浏览器扩展市场](https://microsoftedge.microsoft.com/addons/detail/circle-%E9%98%85%E8%AF%BB%E6%A8%A1%E5%BC%8F%EF%BD%9Creader-mode/hjkjecmcifblnghjpcjaofpakjpgfjio) 安装
 
@@ -126,7 +126,7 @@ QQ 讨论组：605710052
 
 ## 支持我
 
-如果 Circle 确实帮助到你，不如请我喝一杯 ☕️ 以示鼓励和支持（请不要超过你的早餐价格）。如果囊中羞涩，请 start 或者在社交平台发一遍文章谈谈使用感受，让更多人了解 Circle，你的认可是对我最大的鼓励
+如果 Circle 确实帮助到你，不如请我喝一杯 ☕️ 以示鼓励和支持（请不要超过你的早餐价格）。如果囊中羞涩，请 star 或者在社交平台发一遍文章谈谈使用感受，让更多人了解 Circle，你的认可是对我最大的鼓励
 
 ![捐赠 Circle](https://ranhe.xyz/post-images/donate.jpg)
 
