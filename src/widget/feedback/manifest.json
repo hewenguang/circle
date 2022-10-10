@@ -1,0 +1,52 @@
+{
+  "title": "__MSG_feedback__",
+  "priority": 480,
+  "options": {
+    "keys": {
+      "data": {
+        "feedback": {
+          "title": "__MSG_feedback__"
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "feedback": {
+          "title": "__MSG_feedback__"
+        }
+      }
+    },
+    "toolbar": {
+      "data": [
+        {
+          "group": 4,
+          "id": "feedback",
+          "icon": "FeedbackOutline",
+          "title": "__MSG_feedback__"
+        }
+      ]
+    }
+  },
+  "data": {
+    "keys": {
+      "feedback": {
+        "value": "e d",
+        "checked": true
+      }
+    },
+    "menu": {
+      "feedback": {
+        "title": "__MSG_feedback__",
+        "checked": true
+      }
+    },
+    "toolbar": {
+      "feedback": {
+        "group": 4,
+        "checked": true,
+        "icon": "FeedbackOutline",
+        "title": "__MSG_feedback__"
+      }
+    }
+  }
+}

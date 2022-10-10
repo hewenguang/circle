@@ -1,0 +1,54 @@
+{
+  "title": "__MSG_manual__",
+  "priority": 130,
+  "dependencies": ["react", "antd"],
+  "homepage_url": "manual",
+  "description": "__MSG_manual_desc__",
+  "options": {
+    "keys": {
+      "data": {
+        "manual": {
+          "title": "__MSG_manual__"
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "manual": {
+          "title": "__MSG_manual__"
+        }
+      }
+    },
+    "toolbar": {
+      "data": [
+        {
+          "group": 1,
+          "id": "manual",
+          "icon": "SelectOutlined",
+          "title": "__MSG_manual__"
+        }
+      ]
+    }
+  },
+  "data": {
+    "keys": {
+      "manual": {
+        "value": "h l",
+        "checked": true
+      }
+    },
+    "menu": {
+      "manual": {
+        "title": "__MSG_manual__",
+        "checked": true
+      }
+    },
+    "toolbar": {
+      "manual": {
+        "group": 1,
+        "icon": "SelectOutlined",
+        "title": "__MSG_manual__"
+      }
+    }
+  }
+}

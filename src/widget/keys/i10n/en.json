@@ -1,0 +1,6 @@
+{
+  "keys": "hot key",
+  "keys_desc": "Use shortcut keys to improve operational efficiency",
+  "keys_msg": "Press the key after selecting the input box, support single key, combination key and double-click single key",
+  "only_in_reader": "Only supports running in reading mode"
+}

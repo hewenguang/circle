@@ -1,6 +1,4 @@
-node_modules
 dist
 dev
-temp
-.idea
-src/plugins
+zip
+node_modules

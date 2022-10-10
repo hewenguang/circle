@@ -1,0 +1,56 @@
+.table-header {
+  position: relative;
+  padding: 14px 20px;
+  border-top: 1px solid rgba(var(--bg-r), var(--bg-g), var(--bg-b), 0.6);
+  .ant-input-affix-wrapper {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    width: 100px;
+    z-index: 10;
+    &.ant-input-affix-wrapper-focused {
+      width: 290px;
+    }
+  }
+}
+
+.ant-table-wrapper {
+  .ant-table-container {
+    table {
+      font-size: 15px;
+      // background: var(--canvas);
+      & > thead > tr th {
+        &:before {
+          display: none;
+        }
+        &:first-child {
+          padding-left: 20px;
+        }
+      }
+      & > tbody > tr td {
+        vertical-align: baseline;
+        .empty {
+          min-height: 100px;
+        }
+        &:first-child {
+          padding-left: 20px;
+        }
+      }
+      & > tbody > tr {
+        & td:last-child {
+          padding: 0;
+          text-align: center;
+        }
+      }
+      .table-cell {
+        max-width: 120px;
+        max-height: 53px;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

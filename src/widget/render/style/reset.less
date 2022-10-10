@@ -1,0 +1,179 @@
+.root {
+  code,
+  tt {
+    border-radius: 3px;
+    padding: 0 5px;
+    margin: 0 5px;
+  }
+
+  pre {
+    padding: 0.6em 0.8em;
+    word-wrap: break-word;
+    border-radius: 3px;
+  }
+
+  pre code {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    background: 0 0;
+    border: 0;
+  }
+
+  kbd {
+    margin: 0 0.2em;
+    padding: 0.15em 0.4em 0.1em;
+    font-size: 90%;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+  }
+
+  blockquote {
+    padding: 0.1em 1em;
+    opacity: 0.85;
+    & > :first-child {
+      margin-top: 0px;
+    }
+    & > :last-child {
+      margin-bottom: 0px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  hr {
+    clear: both;
+    margin: 15px 0;
+    height: 0px;
+    overflow: hidden;
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  table {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid transparent;
+    border-collapse: collapse;
+  }
+
+  figure {
+    overflow: auto;
+    > img,
+    > table,
+    > pre {
+      margin: 0 !important;
+    }
+  }
+
+  tr th,
+  tr td {
+    padding: 6px 13px;
+  }
+
+  tr th p {
+    margin: 0;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  // https://news.hangzhou.com.cn/gnxw/content/2021-05/06/content_7959010.htm
+  embed {
+    max-width: 100%;
+  }
+
+  li {
+    div,
+    p {
+      margin: 0;
+    }
+  }
+
+  mark {
+    padding: 0;
+    margin: 0;
+    color: initial;
+    background-color: initial;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  [role='separator'] {
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+      margin: 25px 0;
+      height: 0;
+      overflow: hidden;
+      border: none;
+      background: transparent;
+      padding: 0;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  .line {
+    display: block;
+  }
+
+  .left {
+    float: left;
+    margin-right: 12px;
+  }
+
+  .right {
+    float: right;
+    margin-left: 12px;
+  }
+
+  .both {
+    clear: both;
+  }
+
+  .full-width {
+    width: 100%;
+    max-width: 100% !important;
+  }
+
+  .noise {
+    display: none;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
+
+  // .flex { https://iiong.com/tag/notes/#circle=off
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+
+  .inline-flex {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .zone-width {
+    min-width: 0;
+  }
+}

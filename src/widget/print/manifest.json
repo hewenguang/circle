@@ -1,0 +1,53 @@
+{
+  "title": "__MSG_print__",
+  "priority": 40,
+  "homepage_url": "print",
+  "description": "__MSG_print_desc__",
+  "options": {
+    "keys": {
+      "data": {
+        "print": {
+          "title": "__MSG_print__"
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "print": {
+          "title": "__MSG_print__"
+        }
+      }
+    },
+    "toolbar": {
+      "data": [
+        {
+          "group": 0,
+          "id": "print",
+          "icon": "PrinterOutlined",
+          "title": "__MSG_print__"
+        }
+      ]
+    }
+  },
+  "data": {
+    "keys": {
+      "print": {
+        "value": "p p",
+        "checked": true
+      }
+    },
+    "menu": {
+      "print": {
+        "title": "__MSG_print__"
+      }
+    },
+    "toolbar": {
+      "print": {
+        "group": 0,
+        "checked": true,
+        "icon": "PrinterOutlined",
+        "title": "__MSG_print__"
+      }
+    }
+  }
+}

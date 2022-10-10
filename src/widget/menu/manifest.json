@@ -1,0 +1,14 @@
+{
+  "title": "__MSG_menu__",
+  "apply": "start",
+  "priority": 100,
+  "homepage_url": "menu",
+  "options": {
+    "menu": {
+      "type": "switch",
+      "table": "menu",
+      "title": "__MSG_menu__",
+      "icon": "MenuOutlined"
+    }
+  }
+}

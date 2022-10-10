@@ -1,0 +1,53 @@
+{
+  "beta": true,
+  "title": "__MSG_focus__",
+  "priority": 140,
+  "homepage_url": "focus",
+  "description": "__MSG_focus_desc__",
+  "type": "ui",
+  "options": {
+    "layout": {
+      "data": [
+        {
+          "title": "__MSG_focus__"
+        },
+        {
+          "min": 0,
+          "max": 1,
+          "step": 0.1,
+          "id": "focus_opacity",
+          "defaultValue": 0.1,
+          "title": "__MSG_focus_opacity__"
+        }
+      ]
+    },
+    "keys": {
+      "data": {
+        "focus": {
+          "title": "__MSG_focus__"
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "focus": {
+          "title": "__MSG_focus__"
+        }
+      }
+    }
+  },
+  "data": {
+    "keys": {
+      "focus": {
+        "value": "a s",
+        "checked": true
+      }
+    },
+    "menu": {
+      "focus": {
+        "title": "__MSG_focus__",
+        "checked": true
+      }
+    }
+  }
+}

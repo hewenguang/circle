@@ -1,0 +1,16 @@
+{
+  "title": "__MSG_keys__",
+  "apply": "start",
+  "priority": 90,
+  "homepage_url": "keys",
+  "description": "__MSG_keys_desc__",
+  "options": {
+    "keys": {
+      "table": "keys",
+      "type": "input-switch",
+      "title": "__MSG_keys__",
+      "icon": "ThunderboltOutlined",
+      "tooltip": "__MSG_keys_msg__"
+    }
+  }
+}

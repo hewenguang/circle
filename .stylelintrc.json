@@ -1,0 +1,8 @@
+{
+  "extends": ["stylelint-config-prettier", "stylelint-config-recommended-less"],
+  "customSyntax": "postcss-less",
+  "rules": {
+    "no-empty-source": null,
+    "no-descending-specificity": null
+  }
+}

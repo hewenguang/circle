@@ -1,0 +1,22 @@
+{
+  "lists": "黑白名單",
+  "whitelist": "白名單",
+  "blacklist": "黑名單",
+  "add_whitelist": "將當前頁加入白名單",
+  "remove_whitelist": "從白名單將當前頁移除",
+  "toggle_whitelist": "將當前頁加入或移除白名單",
+  "add_whitelist_site": "將當前網站加入白名單",
+  "remove_whitelist_site": "從白名單將當前網站移除",
+  "toggle_whitelist_site": "將當前網站加入或移除白名單",
+  "add_blacklist": "將當前頁加入黑名單",
+  "remove_blacklist": "從黑名單將當前頁移除",
+  "toggle_blacklist": "將當前頁加入或移除黑名單",
+  "add_blacklist_site": "將當前網站加入黑名單",
+  "remove_blacklist_site": "從黑名單將當前網站移除",
+  "toggle_blacklist_site": "將當前網站加入或移除黑名單",
+  "lists_remove_success": "移除成功",
+  "lists_add_success": "添加成功",
+  "title": "標題",
+  "url": "網址",
+  "operate": "操作"
+}

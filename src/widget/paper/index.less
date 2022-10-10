@@ -1,0 +1,36 @@
+.root {
+  &.paper {
+    .page {
+      background: var(--canvas);
+      padding: var(--padding);
+      border-bottom-width: 0;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+      .cover {
+        max-width: calc(100% + var(--padding) * 2);
+        margin: calc(var(--padding) * -1) calc(var(--padding) * -1) 16px;
+      }
+    }
+    .page-block {
+      padding-left: var(--padding);
+      padding-right: var(--padding);
+      .cover {
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    &.paper {
+      .page {
+        padding: 20px;
+        .cover {
+          max-width: calc(100% + 40px);
+          margin: -20px -20px 20px;
+        }
+      }
+    }
+  }
+}

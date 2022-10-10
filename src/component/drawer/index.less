@@ -1,0 +1,69 @@
+.ant-drawer {
+  .ant-drawer-header {
+    padding-left: 14px;
+  }
+  .ant-drawer-body {
+    padding: 0px;
+  }
+}
+
+.drawer-toolbar {
+  height: auto;
+  bottom: auto;
+  left: auto;
+  .ant-drawer-wrapper-body {
+    flex-flow: row-reverse;
+    align-items: flex-start;
+  }
+  .ant-drawer-content-wrapper {
+    height: auto;
+    width: auto;
+    position: static;
+  }
+  .ant-drawer-header-close-only {
+    padding: 16px;
+    border: 0;
+    .ant-drawer-close {
+      margin-right: 0;
+    }
+  }
+}
+
+.drawer-modal {
+  .ant-modal-close-x .anticon-close {
+    padding: 20px;
+  }
+  .ant-modal-body {
+    padding: 1px;
+  }
+}
+
+// 统一处理 rtl 问题
+.ant-drawer.ant-drawer-rtl {
+  .ant-drawer-body {
+    .reset-button {
+      right: auto;
+      left: 22px;
+    }
+    .slider.label {
+      label {
+        left: auto;
+        right: 0;
+      }
+      .inputnumber-unit {
+        left: 0px;
+        right: auto;
+      }
+    }
+    .color-extra {
+      left: 10px;
+      right: auto;
+    }
+    label {
+      .anticon {
+        margin-left: 6px;
+        margin-right: 0 !important;
+      }
+    }
+  }
+}

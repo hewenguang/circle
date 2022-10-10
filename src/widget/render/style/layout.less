@@ -1,0 +1,242 @@
+.root {
+  margin: 0;
+  padding: 1px;
+  display: none;
+  text-shadow: none;
+  font-size: var(--size);
+  font-family: var(--font);
+  font-weight: var(--weight);
+  font-variant: tabular-nums;
+  line-height: var(--lineheight);
+  font-feature-settings: 'tnum';
+
+  h1 {
+    font-size: var(--title1);
+    font-weight: var(--title1weight);
+  }
+
+  h2 {
+    font-size: var(--title2);
+    font-weight: var(--title2weight);
+  }
+
+  h3 {
+    font-size: var(--title3);
+    font-weight: var(--title3weight);
+  }
+
+  h4 {
+    font-size: var(--title4);
+    font-weight: var(--title4weight);
+  }
+
+  h5 {
+    font-size: var(--title5);
+    font-weight: var(--title5weight);
+  }
+
+  h6 {
+    font-size: var(--title6);
+    font-weight: var(--title6weight);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-indent: 0;
+  }
+
+  ol,
+  ul {
+    text-indent: 0;
+  }
+
+  pre,
+  code,
+  blockquote {
+    text-indent: 0;
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol,
+  dl,
+  table,
+  pre,
+  section,
+  figcaption,
+  li,
+  .block {
+    margin: var(--blockspace) 0;
+  }
+
+  .flex,
+  .inline-flex {
+    p,
+    blockquote,
+    ul,
+    ol,
+    dl,
+    table,
+    pre,
+    section,
+    figcaption,
+    .block {
+      margin: 0;
+    }
+    > * {
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+      &:first-child {
+        margin-left: 0 !important;
+      }
+      &:last-child {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .container {
+    min-height: 610px;
+    max-width: var(--width);
+    margin: var(--margin) auto;
+  }
+
+  .page {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    word-break: break-word;
+    text-indent: var(--indent);
+    letter-spacing: var(--space);
+    text-align: var(--align);
+    border-bottom: 1px solid var(--color);
+    & > *:first-child {
+      margin-top: 0;
+    }
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom-width: 0;
+    }
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+      height: 0px;
+    }
+    img {
+      display: var(--imagehide);
+      &.large {
+        margin-top: var(--blockspace) !important;
+        margin-bottom: var(--blockspace) !important;
+        margin-left: var(--imageleft) !important;
+        margin-right: var(--imageright) !important;
+      }
+      &.tiny,
+      &.base64 {
+        width: auto; //小图不应被撑开
+      }
+    }
+    p > img.large {
+      margin: 0 !important;
+    }
+
+    figure {
+      overflow: auto;
+      > img.large,
+      > table,
+      > pre {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    }
+
+    figure > figcaption {
+      text-align: center;
+      font-size: 90%;
+      opacity: 0.8;
+      margin-top: 6px;
+    }
+
+    a {
+      img {
+        margin: 0 !important;
+      }
+    }
+    .cover {
+      text-indent: 0;
+      margin-bottom: 16px;
+      img {
+        margin: 0 !important;
+        width: 100%;
+      }
+    }
+    .title {
+      text-indent: 0;
+      text-align: var(--titlealign);
+      margin-bottom: var(--blockspace);
+    }
+    .time {
+      margin-top: -20px;
+    }
+  }
+
+  .page-block {
+    padding: var(--padding);
+    column-gap: var(--columngap);
+    column-count: var(--columncount);
+    margin-bottom: 100px;
+    p,
+    blockquote,
+    ul,
+    ol,
+    dl,
+    table,
+    pre,
+    section,
+    .block {
+      page-break-inside: avoid;
+      break-inside: avoid-column;
+    }
+  }
+
+  .footer {
+    text-align: center;
+    opacity: 0.4;
+    font-size: 15px;
+    padding: 0 0 20px;
+    .link {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 6px 0;
+      padding: 0;
+      li {
+        margin: 0 5px;
+        a {
+          color: var(--color);
+        }
+      }
+    }
+  }
+}
+
+// 中文字体（重要）
+.zh-cn {
+  font-family: var(--cnfont);
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    .container {
+      margin: 20px 16px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "PORT": 3333,
+  "CRX_V3": false,
+  "FIREFOX": false,
+  "SRC": "../src",
+  "DEV": "../dev",
+  "PROD": "../dist",
+  "PUBLIC": "../public",
+  "ZIP": "../zip"
+}

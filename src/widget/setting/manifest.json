@@ -1,0 +1,517 @@
+{
+  "title": "__MSG_setting__",
+  "dependencies": ["react", "antd"],
+  "priority": 50,
+  "options": {
+    "keys": {
+      "data": {
+        "setting": {
+          "title": "__MSG_setting__"
+        },
+        "setting__style": {
+          "title": "__MSG_style__",
+          "priority": 601
+        },
+        "setting__skin": {
+          "title": "__MSG_skin__",
+          "priority": 602
+        },
+        "setting__layout": {
+          "title": "__MSG_layout__",
+          "priority": 603
+        },
+        "setting__toolbar": {
+          "title": "__MSG_toolbar__",
+          "priority": 605
+        },
+        "setting__keys": {
+          "title": "__MSG_keys__",
+          "priority": 606
+        },
+        "setting__menu": {
+          "title": "__MSG_menu__",
+          "priority": 607
+        },
+        "setting__lists": {
+          "title": "__MSG_lists__",
+          "priority": 608
+        },
+        "setting__plugin": {
+          "title": "__MSG_plugin__",
+          "priority": 609
+        },
+        "setting__config": {
+          "title": "__MSG_config__",
+          "priority": 611
+        },
+        "setting__about": {
+          "title": "__MSG_about__",
+          "priority": 612
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "setting": {
+          "title": "__MSG_setting__"
+        },
+        "setting__style": {
+          "title": "__MSG_style__",
+          "priority": 601
+        },
+        "setting__skin": {
+          "title": "__MSG_skin__",
+          "priority": 602
+        },
+        "setting__layout": {
+          "title": "__MSG_layout__",
+          "priority": 603
+        },
+        "setting__toolbar": {
+          "title": "__MSG_toolbar__",
+          "priority": 605
+        },
+        "setting__keys": {
+          "title": "__MSG_keys__",
+          "priority": 606
+        },
+        "setting__menu": {
+          "title": "__MSG_menu__",
+          "priority": 607
+        },
+        "setting__lists": {
+          "title": "__MSG_lists__",
+          "priority": 608
+        },
+        "setting__plugin": {
+          "title": "__MSG_plugin__",
+          "priority": 609
+        },
+        "setting__config": {
+          "title": "__MSG_config__",
+          "priority": 611
+        },
+        "setting__about": {
+          "title": "__MSG_about__",
+          "priority": 612
+        }
+      }
+    },
+    "toolbar": {
+      "data": [
+        {
+          "group": 0,
+          "id": "setting",
+          "icon": "SettingOutlined",
+          "title": "__MSG_setting__"
+        },
+        {
+          "group": 4,
+          "priority": 601,
+          "id": "setting__style",
+          "icon": "FormatPainterOutlined",
+          "title": "__MSG_style__"
+        },
+        {
+          "group": 4,
+          "priority": 602,
+          "id": "setting__skin",
+          "icon": "SkinOutlined",
+          "title": "__MSG_skin__"
+        },
+        {
+          "group": 4,
+          "priority": 603,
+          "id": "setting__layout",
+          "icon": "LayoutOutlined",
+          "title": "__MSG_layout__"
+        },
+        {
+          "group": 4,
+          "priority": 605,
+          "id": "setting__toolbar",
+          "icon": "ToolOutlined",
+          "title": "__MSG_toolbar__"
+        },
+        {
+          "group": 4,
+          "priority": 606,
+          "id": "setting__keys",
+          "icon": "ThunderboltOutlined",
+          "title": "__MSG_keys__"
+        },
+        {
+          "group": 4,
+          "priority": 607,
+          "id": "setting__menu",
+          "icon": "MenuOutlined",
+          "title": "__MSG_menu__"
+        },
+        {
+          "group": 4,
+          "priority": 608,
+          "id": "setting__lists",
+          "icon": "ProfileOutlined",
+          "title": "__MSG_lists__"
+        },
+        {
+          "group": 4,
+          "priority": 609,
+          "id": "setting__plugin",
+          "icon": "AppstoreOutlined",
+          "title": "__MSG_plugin__"
+        },
+        {
+          "group": 4,
+          "priority": 611,
+          "id": "setting__config",
+          "icon": "DatabaseOutlined",
+          "title": "__MSG_config__"
+        },
+        {
+          "group": 4,
+          "priority": 612,
+          "id": "setting__about",
+          "icon": "ExclamationCircleOutlined",
+          "title": "__MSG_about__"
+        }
+      ]
+    },
+    "config": {
+      "priority": 190,
+      "title": "__MSG_config__",
+      "icon": "DatabaseOutlined",
+      "data": [
+        {
+          "type": "local",
+          "id": "local",
+          "priority": 10,
+          "hiddenLabel": true,
+          "title": "__MSG_local__",
+          "data": [
+            {
+              "id": "sync_export",
+              "title": "__MSG_sync_export__",
+              "data": [
+                {
+                  "id": "setting",
+                  "title": "__MSG_setting__"
+                },
+                {
+                  "id": "lists",
+                  "title": "__MSG_lists__"
+                },
+                {
+                  "id": "keys",
+                  "title": "__MSG_keys__"
+                },
+                {
+                  "id": "menu",
+                  "title": "__MSG_menu__"
+                },
+                {
+                  "id": "toolbar",
+                  "title": "__MSG_toolbar__"
+                }
+              ]
+            },
+            {
+              "id": "sync_import",
+              "title": "__MSG_sync_import__"
+            }
+          ]
+        },
+        {
+          "type": "reset",
+          "id": "reset",
+          "hiddenLabel": true,
+          "title": "__MSG_reset_all__"
+        }
+      ]
+    },
+    "about": {
+      "priority": 200,
+      "title": "__MSG_about__",
+      "icon": "ExclamationCircleOutlined",
+      "data": [
+        {
+          "priority": 0,
+          "type": "card",
+          "id": "follow",
+          "hiddenLabel": true,
+          "title": "__MSG_follow__",
+          "tooltip": "__MSG_follow_msg__",
+          "data": [
+            {
+              "title": "__MSG_wechat__",
+              "img": "https://ranhe.xyz/post-images/wechat.png"
+            },
+            {
+              "title": "__MSG_qq__",
+              "path": "https://qm.qq.com/cgi-bin/qm/qr?k=wseaRm8SdNiXCasA9RYwSbE_iMpblbqi&jump_from=webapi"
+            }
+          ]
+        },
+        {
+          "priority": 1,
+          "type": "card",
+          "id": "support",
+          "hiddenLabel": true,
+          "title": "__MSG_support__",
+          "tooltip": "__MSG_support_msg__",
+          "data": [
+            {
+              "title": "__MSG_donate_coffee__",
+              "path": "http://circlereader.com/donate"
+            },
+            {
+              "title": "__MSG_share_to_other__",
+              "path": "https://ranhe.xyz/circle-share"
+            }
+          ]
+        },
+        {
+          "priority": 2,
+          "id": "vote",
+          "type": "vote",
+          "hiddenLabel": true,
+          "title": "__MSG_vote__",
+          "tooltip": "__MSG_vote_msg__",
+          "data": [
+            {
+              "id": "vote",
+              "type": "primary",
+              "title": "__MSG_to_vote__"
+            },
+            {
+              "id": "feedback",
+              "title": "__MSG_to_feedback__"
+            }
+          ]
+        },
+        {
+          "priority": 3,
+          "type": "card",
+          "id": "link",
+          "hiddenLabel": true,
+          "title": "__MSG_link__",
+          "data": [
+            {
+              "title": "__MSG_website__",
+              "path": "",
+              "type": "link"
+            },
+            {
+              "title": "__MSG_usage__",
+              "path": "usage",
+              "type": "link"
+            },
+            {
+              "title": "__MSG_agreement__",
+              "path": "agreement",
+              "type": "link"
+            },
+            {
+              "title": "__MSG_privacy__",
+              "path": "privacy",
+              "type": "link"
+            },
+            {
+              "title": "__MSG_faq__",
+              "path": "faq",
+              "type": "link"
+            },
+            {
+              "title": "__MSG_update__",
+              "path": "changelog",
+              "type": "link"
+            },
+            {
+              "title": "__MSG_feedback__",
+              "path": "feedback",
+              "type": "link"
+            },
+            {
+              "title": "__MSG_download_latest__",
+              "path": "download",
+              "type": "link"
+            },
+            {
+              "title": "__MSG_donate__",
+              "path": "donate",
+              "type": "link"
+            }
+          ]
+        },
+        {
+          "priority": 4,
+          "type": "version",
+          "id": "version"
+        }
+      ]
+    }
+  },
+  "data": {
+    "keys": {
+      "setting": {
+        "value": "s t",
+        "checked": true
+      },
+      "setting__style": {
+        "value": "s l",
+        "priority": 601
+      },
+      "setting__skin": {
+        "value": "t m",
+        "priority": 602
+      },
+      "setting__layout": {
+        "value": "l y",
+        "priority": 603
+      },
+      "setting__toolbar": {
+        "value": "t b",
+        "priority": 605
+      },
+      "setting__keys": {
+        "value": ",",
+        "priority": 606
+      },
+      "setting__menu": {
+        "value": "c m",
+        "priority": 607
+      },
+      "setting__lists": {
+        "value": "m w",
+        "priority": 608
+      },
+      "setting__plugin": {
+        "value": "a p",
+        "priority": 609
+      },
+      "setting__config": {
+        "value": "c f",
+        "priority": 611
+      },
+      "setting__about": {
+        "value": "a b",
+        "priority": 612
+      }
+    },
+    "menu": {
+      "setting": {
+        "title": "__MSG_setting__",
+        "checked": true
+      },
+      "setting__style": {
+        "title": "__MSG_style__",
+        "priority": 601
+      },
+      "setting__skin": {
+        "title": "__MSG_skin__",
+        "priority": 602
+      },
+      "setting__layout": {
+        "title": "__MSG_layout__",
+        "priority": 603
+      },
+      "setting__toolbar": {
+        "title": "__MSG_toolbar__",
+        "priority": 605
+      },
+      "setting__keys": {
+        "title": "__MSG_keys__",
+        "priority": 606
+      },
+      "setting__menu": {
+        "title": "__MSG_menu__",
+        "priority": 607
+      },
+      "setting__lists": {
+        "title": "__MSG_lists__",
+        "priority": 608
+      },
+      "setting__plugin": {
+        "title": "__MSG_plugin__",
+        "priority": 609
+      },
+      "setting__config": {
+        "title": "__MSG_config__",
+        "priority": 611
+      },
+      "setting__about": {
+        "title": "__MSG_about__",
+        "priority": 612
+      }
+    },
+    "toolbar": {
+      "setting": {
+        "group": 0,
+        "checked": true,
+        "icon": "SettingOutlined",
+        "title": "__MSG_setting__"
+      },
+      "setting__style": {
+        "group": 4,
+        "priority": 601,
+        "icon": "FormatPainterOutlined",
+        "title": "__MSG_style__"
+      },
+      "setting__skin": {
+        "group": 4,
+        "priority": 602,
+        "icon": "SkinOutlined",
+        "title": "__MSG_skin__"
+      },
+      "setting__layout": {
+        "group": 4,
+        "priority": 603,
+        "icon": "LayoutOutlined",
+        "title": "__MSG_layout__"
+      },
+      "setting__toolbar": {
+        "group": 4,
+        "priority": 605,
+        "icon": "ToolOutlined",
+        "title": "__MSG_toolbar__"
+      },
+      "setting__keys": {
+        "group": 4,
+        "priority": 606,
+        "icon": "ThunderboltOutlined",
+        "title": "__MSG_keys__"
+      },
+      "setting__menu": {
+        "group": 4,
+        "priority": 607,
+        "icon": "MenuOutlined",
+        "title": "__MSG_menu__"
+      },
+      "setting__lists": {
+        "group": 4,
+        "priority": 608,
+        "icon": "ProfileOutlined",
+        "title": "__MSG_lists__"
+      },
+      "setting__plugin": {
+        "group": 4,
+        "priority": 609,
+        "checked": true,
+        "icon": "AppstoreOutlined",
+        "title": "__MSG_plugin__"
+      },
+      "setting__config": {
+        "group": 4,
+        "priority": 611,
+        "icon": "DatabaseOutlined",
+        "title": "__MSG_config__"
+      },
+      "setting__about": {
+        "group": 4,
+        "priority": 612,
+        "icon": "ExclamationCircleOutlined",
+        "title": "__MSG_about__"
+      }
+    }
+  }
+}

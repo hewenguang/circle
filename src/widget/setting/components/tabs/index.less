@@ -1,0 +1,35 @@
+.tabs-inner {
+  width: 100%;
+  overflow: visible;
+  & > div.ant-tabs-nav {
+    margin-bottom: 12px;
+    &::before {
+      border-bottom-color: var(--bg);
+    }
+    .ant-tabs-extra-content {
+      display: flex;
+      align-items: center;
+    }
+    .ant-tabs-nav-wrap {
+      justify-content: flex-end;
+    }
+    .ant-tabs-tab + .ant-tabs-tab {
+      margin: 0 0 0 17px;
+    }
+    .ant-tabs-tab-btn {
+      label {
+        cursor: pointer;
+      }
+    }
+    .ant-tabs-tab.ant-tabs-tab-disabled {
+      .ant-tabs-tab-btn {
+        label {
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  .ant-tabs-content-holder {
+    padding: 0;
+  }
+}

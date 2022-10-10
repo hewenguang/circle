@@ -1,0 +1,22 @@
+{
+  "lists": "흑백 목록",
+  "whitelist": "화이트리스트",
+  "blacklist": "블랙리스트",
+  "add_whitelist": "현재 페이지를 화이트리스트에 추가",
+  "remove_whitelist": "화이트리스트에서 현재 페이지 제거",
+  "toggle_whitelist": "현재 페이지를 화이트리스트에 추가 또는 제거",
+  "add_whitelist_site": "현재 웹사이트 허용",
+  "remove_whitelist_site": "화이트리스트에서 현재 사이트 제거",
+  "toggle_whitelist_site": "화이트리스트에서 현재 사이트 추가 또는 제거",
+  "add_blacklist": "현재 페이지를 블랙리스트에 추가",
+  "remove_blacklist": "블랙리스트에서 현재 페이지 제거",
+  "toggle_blacklist": "현재 페이지를 블랙리스트에 추가 또는 제거",
+  "add_blacklist_site": "현재 사이트를 블랙리스트에 추가",
+  "remove_blacklist_site": "블랙리스트에서 현재 사이트 제거",
+  "toggle_blacklist_site": "블랙리스트에서 현재 웹사이트 추가 또는 제거",
+  "lists_remove_success": "성공적으로 제거됨",
+  "lists_add_success": "성공적으로 추가됨",
+  "title": "제목",
+  "url": "URL",
+  "operate": "작동하다"
+}

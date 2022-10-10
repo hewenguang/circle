@@ -1,0 +1,22 @@
+{
+  "lists": "Black and white list",
+  "whitelist": "whitelist",
+  "blacklist": "blacklist",
+  "add_whitelist": "Add the current page to the whitelist",
+  "remove_whitelist": "Remove current page from whitelist",
+  "toggle_whitelist": "Add or remove the current page to the whitelist",
+  "add_whitelist_site": "Whitelist the current website",
+  "remove_whitelist_site": "Remove current site from whitelist",
+  "toggle_whitelist_site": "Add or remove the current site from the whitelist",
+  "add_blacklist": "Add current page to blacklist",
+  "remove_blacklist": "Remove current page from blacklist",
+  "toggle_blacklist": "Add or remove the current page to the blacklist",
+  "add_blacklist_site": "Add current site to blacklist",
+  "remove_blacklist_site": "Remove current site from blacklist",
+  "toggle_blacklist_site": "Add or remove current website from blacklist",
+  "lists_remove_success": "Removed successfully",
+  "lists_add_success": "Added successfully",
+  "title": "title",
+  "url": "URL",
+  "operate": "operate"
+}

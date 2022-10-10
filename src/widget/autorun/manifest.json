@@ -1,0 +1,5 @@
+{
+  "title": "__MSG_autorun__",
+  "description": "__MSG_autorun_tooltip__",
+  "priority": 450
+}

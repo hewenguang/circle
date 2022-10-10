@@ -1,0 +1,92 @@
+.root {
+  --size: 20px;
+  --weight: 400;
+  --color: #1b1b1b;
+  --itemspace: 10px;
+  --groupspace: 10px;
+}
+
+.toolbar {
+  color: var(--color);
+  font-weight: var(--weight);
+  font-size: calc(var(--size) + 4px);
+  position: fixed;
+  top: 26px;
+  right: 26px;
+  z-index: 10;
+  overflow: auto;
+  transition: all 300ms;
+
+  .items {
+    margin-bottom: var(--groupspace);
+  }
+  .anticon {
+    display: block;
+    cursor: pointer;
+    color: var(--color);
+    opacity: 0.4;
+    margin-bottom: var(--itemspace);
+    &.active,
+    &:hover {
+      opacity: 1;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &.sticky {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+}
+
+.mobile {
+  .toolbar {
+    top: auto;
+    right: 18px;
+    bottom: 50px;
+    font-size: calc(var(--size) - 4px);
+    .items {
+      margin-bottom: 0;
+    }
+    .items-moible {
+      position: fixed;
+      bottom: 6px;
+      margin-top: 0;
+      .anticon {
+        margin-top: 0;
+      }
+    }
+    .anticon {
+      display: none;
+      opacity: 0.8;
+      margin-bottom: 0;
+      margin-top: var(--itemspace);
+      padding: 10px;
+      border-radius: 50%;
+      background-color: var(--color);
+      svg {
+        fill: var(--canvas);
+      }
+    }
+    .anticon.exit,
+    .anticon.mobile {
+      display: block;
+    }
+  }
+
+  &.collapse {
+    .toolbar {
+      .anticon {
+        display: block;
+      }
+      .items {
+        margin-top: var(--groupspace);
+      }
+    }
+  }
+}

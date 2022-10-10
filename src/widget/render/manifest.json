@@ -1,0 +1,364 @@
+{
+  "title": "__MSG_render__",
+  "apply": "parser_ready",
+  "priority": 10,
+  "dependencies": ["react", "antd"],
+  "options": {
+    "style": {
+      "theme": true,
+      "night": true,
+      "reset": true,
+      "priority": -8,
+      "title": "__MSG_style__",
+      "icon": "FormatPainterOutlined",
+      "data": [
+        {
+          "type": "font",
+          "id": "font",
+          "placement": "topLeft",
+          "defaultValue": "reset",
+          "title": "__MSG_font__",
+          "tooltip": "__MSG_font_tooltip__",
+          "learn_more": "node/27",
+          "placeholder": "__MSG_default__"
+        },
+        {
+          "type": "font",
+          "id": "cnfont",
+          "placement": "topLeft",
+          "defaultValue": "reset",
+          "title": "__MSG_cn_font__",
+          "placeholder": "__MSG_default__"
+        },
+        {
+          "min": 12,
+          "max": 50,
+          "unit": "px",
+          "id": "size",
+          "defaultValue": 20,
+          "title": "__MSG_size__"
+        },
+        {
+          "min": 600,
+          "max": 2500,
+          "unit": "px",
+          "id": "width",
+          "defaultValue": 800,
+          "title": "__MSG_width__"
+        },
+        {
+          "max": 10,
+          "unit": "px",
+          "id": "space",
+          "defaultValue": 0,
+          "title": "__MSG_space__"
+        },
+        {
+          "min": 1,
+          "max": 3,
+          "step": 0.1,
+          "id": "lineheight",
+          "defaultValue": 1.8,
+          "title": "__MSG_lineheight__"
+        },
+        {
+          "min": 100,
+          "max": 900,
+          "step": 100,
+          "id": "weight",
+          "defaultValue": 400,
+          "title": "__MSG_weight__"
+        },
+        {
+          "max": 50,
+          "step": 2,
+          "unit": "px",
+          "id": "blockspace",
+          "defaultValue": 32,
+          "title": "__MSG_blockspace__"
+        },
+        {
+          "max": 10,
+          "unit": "em",
+          "id": "indent",
+          "defaultValue": 0,
+          "title": "__MSG_indent__"
+        },
+        {
+          "id": "titlealign",
+          "title": "__MSG_titlealign__",
+          "type": "align",
+          "defaultValue": "reset",
+          "placeholder": "__MSG_default__"
+        },
+        {
+          "id": "align",
+          "title": "__MSG_align__",
+          "type": "align",
+          "defaultValue": "reset",
+          "placeholder": "__MSG_default__"
+        },
+        {
+          "id": "imagealign",
+          "title": "__MSG_imagealign__",
+          "type": "align",
+          "defaultValue": "reset",
+          "placeholder": "__MSG_default__"
+        },
+        {
+          "type": "switch",
+          "id": "imagehide",
+          "defaultValue": false,
+          "title": "__MSG_imagehide__"
+        }
+      ]
+    },
+    "skin": {
+      "theme": true,
+      "night": true,
+      "priority": -6,
+      "title": "__MSG_skin__",
+      "icon": "SkinOutlined",
+      "data": [
+        {
+          "type": "color",
+          "id": "theme",
+          "data": [
+            {
+              "title": "light",
+              "data": {
+                "color": "#1b1b1b",
+                "outlineColor": "#f0eded",
+                "border": "1px solid #f0eded",
+                "backgroundColor": "#ffffff"
+              },
+              "value": {
+                "color": "#1b1b1b",
+                "link": "#416ed2",
+                "hover": "#305ab7",
+                "visited": "#305ab7",
+                "select": "#1b1b1b",
+                "selectbg": "#bbd6fc",
+                "bg": "#ffffff",
+                "track": "#e2e2e2",
+                "thumb": "#9e9e9e",
+                "radius": "4px"
+              }
+            },
+            {
+              "title": "green",
+              "data": {
+                "color": "#282d2b",
+                "outlineColor": "#c7edcc",
+                "backgroundColor": "#c7edcc"
+              },
+              "value": {
+                "color": "#282d2b",
+                "link": "#507964",
+                "hover": "#3e6b54",
+                "visited": "#3e6b54",
+                "select": "#000000",
+                "selectbg": "#addab4",
+                "bg": "#c7edcc",
+                "track": "#8fbd95",
+                "thumb": "#638c6d",
+                "radius": "4px"
+              }
+            },
+            {
+              "title": "yellow",
+              "data": {
+                "color": "#4f321c",
+                "outlineColor": "#f8f1e3",
+                "backgroundColor": "#f8f1e3"
+              },
+              "value": {
+                "color": "#4f321c",
+                "link": "#d19600",
+                "hover": "#ad7d03",
+                "visited": "#ad7d03",
+                "select": "#4f321c",
+                "selectbg": "#d19600",
+                "bg": "#f8f1e3",
+                "track": "#d6cfc1",
+                "thumb": "#b3ac9c",
+                "radius": "4px"
+              }
+            },
+            {
+              "title": "gray",
+              "data": {
+                "color": "#b0b0b0",
+                "outlineColor": "#4a4a4d",
+                "backgroundColor": "#4a4a4d"
+              },
+              "value": {
+                "color": "#b0b0b0",
+                "link": "#5ac8fa",
+                "hover": "#3ea4d2",
+                "visited": "#3ea4d2",
+                "select": "#fffefe",
+                "selectbg": "#43b0e2",
+                "bg": "#4a4a4d",
+                "track": "#4e4e50",
+                "thumb": "#83838c",
+                "radius": "4px"
+              }
+            },
+            {
+              "title": "dark",
+              "data": {
+                "color": "#b0b0b0",
+                "outlineColor": "#121212",
+                "backgroundColor": "#121212"
+              },
+              "value": {
+                "color": "#b0b0b0",
+                "link": "#5ac8fa",
+                "hover": "#3ea4d2",
+                "visited": "#3ea4d2",
+                "select": "#fffefe",
+                "selectbg": "#43b0e2",
+                "bg": "#121212",
+                "track": "#3c3a3a",
+                "thumb": "#848484",
+                "radius": "4px"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "layout": {
+      "theme": true,
+      "priority": -4,
+      "title": "__MSG_layout__",
+      "icon": "LayoutOutlined",
+      "data": [
+        {
+          "title": "__MSG_page__"
+        },
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "id": "margin",
+          "defaultValue": 80,
+          "title": "__MSG_margin__"
+        }
+      ]
+    },
+    "keys": {
+      "data": {
+        "exit": {
+          "title": "__MSG_exit__",
+          "priority": 10
+        },
+        "exitclose": {
+          "title": "__MSG_exitclose__",
+          "priority": 20
+        },
+        "imagehide": {
+          "title": "__MSG_imagehide__",
+          "priority": 30
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "exit": {
+          "title": "__MSG_exit__",
+          "priority": 10
+        },
+        "exitclose": {
+          "title": "__MSG_exitclose__",
+          "priority": 20
+        },
+        "imagehide": {
+          "title": "__MSG_imagehide__",
+          "priority": 30
+        }
+      }
+    },
+    "toolbar": {
+      "data": [
+        {
+          "group": 0,
+          "priority": 10,
+          "id": "exit",
+          "icon": "CloseOutlined",
+          "title": "__MSG_exit__"
+        },
+        {
+          "group": 0,
+          "priority": 20,
+          "id": "exitclose",
+          "icon": "PoweroffOutlined",
+          "title": "__MSG_exitclose__"
+        },
+        {
+          "group": 0,
+          "priority": 30,
+          "id": "imagehide",
+          "icon": "ImageHideOutline",
+          "title": "__MSG_imagehide__"
+        }
+      ]
+    }
+  },
+  "data": {
+    "keys": {
+      "exit": {
+        "value": "esc",
+        "checked": true,
+        "priority": 10
+      },
+      "exitclose": {
+        "value": "x x",
+        "checked": true,
+        "priority": 20
+      },
+      "imagehide": {
+        "value": "h p",
+        "checked": true,
+        "priority": 30
+      }
+    },
+    "menu": {
+      "exit": {
+        "title": "__MSG_exit__",
+        "priority": 10
+      },
+      "exitclose": {
+        "title": "__MSG_exitclose__",
+        "priority": 20
+      },
+      "imagehide": {
+        "title": "__MSG_imagehide__",
+        "priority": 30
+      }
+    },
+    "toolbar": {
+      "exit": {
+        "group": 0,
+        "priority": 10,
+        "checked": true,
+        "icon": "CloseOutlined",
+        "title": "__MSG_exit__"
+      },
+      "exitclose": {
+        "group": 0,
+        "priority": 20,
+        "icon": "PoweroffOutlined",
+        "title": "__MSG_exitclose__"
+      },
+      "imagehide": {
+        "group": 0,
+        "priority": 30,
+        "icon": "ImageHideOutline",
+        "title": "__MSG_imagehide__"
+      }
+    }
+  }
+}

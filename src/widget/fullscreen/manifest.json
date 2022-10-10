@@ -1,0 +1,83 @@
+{
+  "title": "__MSG_fullscreen__",
+  "apply": "parser_ready",
+  "priority": 60,
+  "options": {
+    "keys": {
+      "data": {
+        "fullscreen": {
+          "title": "__MSG_fullscreen__"
+        },
+        "fullscreen_exit": {
+          "title": "__MSG_fullscreen_exit__",
+          "priority": 61
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "fullscreen": {
+          "title": "__MSG_fullscreen__"
+        },
+        "fullscreen_exit": {
+          "title": "__MSG_fullscreen_exit__",
+          "priority": 61
+        }
+      }
+    },
+    "toolbar": {
+      "data": [
+        {
+          "group": 0,
+          "id": "fullscreen",
+          "icon": "FullscreenOutlined",
+          "title": "__MSG_fullscreen__"
+        },
+        {
+          "group": 0,
+          "priority": 61,
+          "id": "fullscreen_exit",
+          "icon": "FullscreenExitOutlined",
+          "title": "__MSG_fullscreen_exit__"
+        }
+      ]
+    }
+  },
+  "data": {
+    "keys": {
+      "fullscreen": {
+        "value": "f u",
+        "checked": true
+      },
+      "fullscreen_exit": {
+        "priority": 61,
+        "value": "f e",
+        "checked": true
+      }
+    },
+    "menu": {
+      "fullscreen": {
+        "title": "__MSG_fullscreen__"
+      },
+      "fullscreen_exit": {
+        "title": "__MSG_fullscreen_exit__",
+        "priority": 61
+      }
+    },
+    "toolbar": {
+      "fullscreen": {
+        "group": 0,
+        "checked": true,
+        "icon": "FullscreenOutlined",
+        "title": "__MSG_fullscreen__"
+      },
+      "fullscreen_exit": {
+        "group": 0,
+        "priority": 61,
+        "checked": true,
+        "icon": "FullscreenExitOutlined",
+        "title": "__MSG_fullscreen_exit__"
+      }
+    }
+  }
+}

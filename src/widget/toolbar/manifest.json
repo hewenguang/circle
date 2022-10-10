@@ -1,0 +1,37 @@
+{
+  "title": "__MSG_toolbar__",
+  "apply": "dom_ready",
+  "priority": 70,
+  "options": {
+    "toolbar": {
+      "table": "toolbar",
+      "title": "__MSG_toolbar__",
+      "icon": "ToolOutlined",
+      "type": "icon-switch",
+      "tooltip": "__MSG_toolbar_msg__"
+    },
+    "layout": {
+      "data": [
+        {
+          "title": "__MSG_toolbar__"
+        },
+        {
+          "min": 0,
+          "max": 50,
+          "unit": "px",
+          "id": "itemspace",
+          "defaultValue": 10,
+          "title": "__MSG_itemspace__"
+        },
+        {
+          "min": 0,
+          "max": 50,
+          "unit": "px",
+          "id": "groupspace",
+          "defaultValue": 10,
+          "title": "__MSG_groupspace__"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.sidepanel {
+  &.ant-drawer {
+    .ant-drawer-body {
+      padding: 1px;
+      font-size: inherit;
+      &::-webkit-scrollbar {
+        width: var(--track-width);
+      }
+      &::-webkit-scrollbar-track {
+        background: var(--track);
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: var(--radius);
+        background: var(--thumb);
+      }
+    }
+  }
+  &.ant-drawer-left,
+  &.ant-drawer-right {
+    height: auto;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translateY(-50%);
+    .ant-drawer-content-wrapper {
+      height: auto;
+      position: static;
+      .ant-drawer-content {
+        height: auto;
+        overflow: inherit;
+        .ant-drawer-wrapper-body {
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+.sidepanel-open {
+  .sidepanel-btn {
+    z-index: 100;
+    position: absolute;
+  }
+  &.ant-drawer-left .sidepanel-btn {
+    right: 0;
+    top: 0;
+  }
+  &.ant-drawer-right .sidepanel-btn {
+    left: 0;
+    top: 0;
+  }
+}
+.sidepanel-close {
+  .ant-drawer-content,
+  .ant-drawer-body {
+    overflow: inherit;
+  }
+}

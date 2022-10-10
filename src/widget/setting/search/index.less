@@ -1,0 +1,19 @@
+.search {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 160px;
+  border-radius: 11px;
+  transition: width 0.2s;
+  &.ant-input-affix-wrapper-focused {
+    width: 93%;
+  }
+}
+
+.mobile {
+  .search {
+    &.ant-input-affix-wrapper-focused {
+      width: 91%;
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "title": "__MSG_lists__",
+  "apply": "start",
+  "priority": 120,
+  "homepage_url": "lists",
+  "options": {
+    "lists": {
+      "type": "table",
+      "table": "lists",
+      "priority": 100,
+      "title": "__MSG_lists__",
+      "title1": "__MSG_whitelist__",
+      "title2": "__MSG_blacklist__",
+      "icon": "ProfileOutlined",
+      "data": [
+        {
+          "hidden": true,
+          "field": "deny"
+        },
+        {
+          "hidden": true,
+          "field": "host"
+        },
+        {
+          "width": "40%",
+          "title": "__MSG_title__",
+          "field": "title"
+        },
+        {
+          "type": "url",
+          "width": "40%",
+          "title": "__MSG_url__",
+          "field": "id",
+          "disabled": true
+        },
+        {
+          "title": "__MSG_operate__",
+          "field": "action"
+        }
+      ]
+    },
+    "keys": {
+      "data": {
+        "whitelist": {
+          "title": "__MSG_toggle_whitelist__"
+        },
+        "whitelist_site": {
+          "title": "__MSG_toggle_whitelist_site__",
+          "priority": 121
+        },
+        "blacklist": {
+          "title": "__MSG_toggle_blacklist__",
+          "priority": 122
+        },
+        "blacklist_site": {
+          "title": "__MSG_toggle_blacklist_site__",
+          "priority": 123
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "whitelist": {
+          "title": "__MSG_add_whitelist__"
+        },
+        "whitelist_site": {
+          "title": "__MSG_add_whitelist_site__",
+          "priority": 121
+        },
+        "blacklist": {
+          "title": "__MSG_add_blacklist__",
+          "priority": 122
+        },
+        "blacklist_site": {
+          "title": "__MSG_add_blacklist_site__",
+          "priority": 123
+        }
+      }
+    },
+    "toolbar": {
+      "data": [
+        {
+          "group": 1,
+          "id": "whitelist",
+          "icon": "WhitelistOutline",
+          "title": "__MSG_toggle_whitelist__"
+        },
+        {
+          "group": 1,
+          "priority": 121,
+          "id": "whitelist_site",
+          "icon": "WhitelistSiteOutline",
+          "title": "__MSG_toggle_whitelist_site__"
+        },
+        {
+          "group": 1,
+          "priority": 122,
+          "id": "blacklist",
+          "icon": "BlacklistOutline",
+          "title": "__MSG_toggle_blacklist__"
+        },
+        {
+          "group": 1,
+          "priority": 123,
+          "id": "blacklist_site",
+          "icon": "BlacklistSiteOutline",
+          "title": "__MSG_toggle_blacklist_site__"
+        }
+      ]
+    }
+  },
+  "data": {
+    "keys": {
+      "whitelist": {
+        "value": "w l",
+        "checked": true
+      },
+      "whitelist_site": {
+        "value": "w s",
+        "priority": 121
+      },
+      "blacklist": {
+        "value": "b l",
+        "checked": true,
+        "priority": 122
+      },
+      "blacklist_site": {
+        "value": "b s",
+        "priority": 123
+      }
+    },
+    "menu": {
+      "whitelist": {
+        "title": "__MSG_add_whitelist__",
+        "checked": true
+      },
+      "whitelist_site": {
+        "title": "__MSG_add_whitelist_site__",
+        "priority": 121
+      },
+      "blacklist": {
+        "title": "__MSG_add_blacklist__",
+        "checked": true,
+        "priority": 122
+      },
+      "blacklist_site": {
+        "title": "__MSG_add_blacklist_site__",
+        "priority": 123
+      }
+    },
+    "toolbar": {
+      "whitelist": {
+        "group": 1,
+        "checked": true,
+        "icon": "WhitelistOutline",
+        "title": "__MSG_toggle_whitelist__"
+      },
+      "whitelist_site": {
+        "group": 1,
+        "priority": 121,
+        "icon": "WhitelistSiteOutline",
+        "title": "__MSG_toggle_whitelist_site__"
+      },
+      "blacklist": {
+        "group": 1,
+        "priority": 122,
+        "checked": true,
+        "icon": "BlacklistOutline",
+        "title": "__MSG_toggle_blacklist__"
+      },
+      "blacklist_site": {
+        "group": 1,
+        "priority": 122,
+        "icon": "BlacklistSiteOutline",
+        "title": "__MSG_toggle_blacklist_site__"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "manual": "Manual selection",
+  "manual_desc": "When the text recognition is wrong, assist in the recognition of the text. With the \"rules\", you can remember the choice",
+  "manual_alert": "Click the pop-up window at the bottom of the page to identify the wrong element (dotted border), slide the mouse to select the correct content and click OK",
+  "cover_picture": "cover picture",
+  "title": "title",
+  "time": "time",
+  "body": "content",
+  "select_done": "complete selection"
+}

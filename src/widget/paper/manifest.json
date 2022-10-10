@@ -1,0 +1,55 @@
+{
+  "title": "__MSG_paper__",
+  "apply": "dom_ready",
+  "type": "ui",
+  "priority": 80,
+  "homepage_url": "paper",
+  "description": "__MSG_paper_desc__",
+  "options": {
+    "keys": {
+      "data": {
+        "paper": {
+          "title": "__MSG_paper__"
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "paper": {
+          "title": "__MSG_paper__"
+        }
+      }
+    },
+    "toolbar": {
+      "data": [
+        {
+          "group": 0,
+          "id": "paper",
+          "icon": "PaperOutline",
+          "title": "__MSG_paper__"
+        }
+      ]
+    }
+  },
+  "data": {
+    "keys": {
+      "paper": {
+        "value": "p r",
+        "checked": true
+      }
+    },
+    "menu": {
+      "paper": {
+        "title": "__MSG_paper__"
+      }
+    },
+    "toolbar": {
+      "paper": {
+        "group": 0,
+        "checked": true,
+        "icon": "PaperOutline",
+        "title": "__MSG_paper__"
+      }
+    }
+  }
+}

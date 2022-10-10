@@ -1,0 +1,51 @@
+{
+  "title": "__MSG_parser__",
+  "apply": "load_parser",
+  "priority": 6,
+  "options": {
+    "keys": {
+      "data": {
+        "enter_or_exit": {
+          "title": "__MSG_enter_or_exit__"
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "enter_or_exit": {
+          "title": "__MSG_enter_or_exit__"
+        }
+      }
+    }
+  },
+  "data": {
+    "setting": {
+      "plugin": [
+        "lists",
+        "toolbar",
+        "keys",
+        "menu",
+        "backtop",
+        "fullscreen",
+        "manual",
+        "outline",
+        "print",
+        "paper",
+        "feedback",
+        "focus"
+      ]
+    },
+    "keys": {
+      "enter_or_exit": {
+        "value": "a a",
+        "checked": true
+      }
+    },
+    "menu": {
+      "enter_or_exit": {
+        "title": "__MSG_enter_or_exit__",
+        "checked": true
+      }
+    }
+  }
+}

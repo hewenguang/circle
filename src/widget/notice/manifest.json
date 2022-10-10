@@ -1,0 +1,4 @@
+{
+  "title": "__MSG_notice__",
+  "dependencies": ["react", "antd"]
+}

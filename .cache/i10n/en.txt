@@ -1,0 +1,176 @@
+auto start
+The algorithm needs to be improved, please open it with caution
+
+Back to top
+Navigate to the bottom
+
+feedback
+
+Highlight the original
+Without entering reading mode, highlight the text in the original text
+Non-text transparency in original text
+
+View in full screen
+Exit Full Screen
+automatic full screen
+Enter the Circle full screen display
+
+hot key
+Use shortcut keys to improve operational efficiency
+Press the key after selecting the input box, support single key, combination key and double-click single key
+Only supports running in reading mode
+
+Black and white list
+whitelist
+blacklist
+Add the current page to the whitelist
+Remove current page from whitelist
+Add or remove the current page to the whitelist
+Whitelist the current website
+Remove current site from whitelist
+Add or remove the current site from the whitelist
+Add current page to blacklist
+Remove current page from blacklist
+Add or remove the current page to the blacklist
+Add current site to blacklist
+Remove current site from blacklist
+Add or remove current website from blacklist
+Removed successfully
+Added successfully
+title
+URL
+operate
+
+Manual selection
+When the text recognition is wrong, assist in the recognition of the text. With the "rules", you can remember the choice
+Click the pop-up window at the bottom of the page to identify the wrong element (dotted border), slide the mouse to select the correct content and click OK
+cover picture
+title
+time
+content
+complete selection
+
+right-click menu
+Only supports running in reading mode
+
+message box
+
+Article directory
+Automatically identify categories of content to quickly navigate to your point of interest
+pinned directory
+hidden directory
+
+stationery effect
+Letter-like reading experience
+Similar to stationery background border
+
+parsing engine
+Content identification failed, please use the "manual selection" plugin to assist in identifying the content
+
+Print
+Invoke the browser's print service
+
+rendering engine
+style
+page
+default font
+Chinese font
+The font needs to be installed on the system
+system default
+font size
+page width
+font spacing
+font line height
+font weight
+paragraph spacing
+First line indent
+title alignment
+content alignment
+image alignment
+hide image
+theme
+Official homepage
+Donate support
+download
+first-level title
+secondary title
+tertiary heading
+Level 4 heading
+Level 5 heading
+Level 6 heading
+layout
+page margins
+It takes effect only after the paper effect is enabled
+Browser extension Circle reading assistant layout, copyright owned by $URL$
+
+abnormal
+If the corresponding platform is not found, you can manually enter the expansion market, and give a good comment after searching for Circle ~
+Don't show anymore after closing, are you sure?
+enable
+disabled
+Preferences
+Align left
+center align
+Align right
+justified
+reset
+revert to default
+Initialize all configurations
+follow the system
+Follow the system to automatically switch styles
+Follow the system to automatically switch themes
+log out and close the page
+Enter/Exit Circle
+quit
+Back to top
+Navigate to the bottom
+application market
+customize
+OK
+No data found, try changing keywords
+Cancel
+remove
+edit
+delete
+Add to
+Learn more
+Can not be empty
+No data
+Are you sure to reset? All data such as black and white list, read later, etc. will be cleared
+Example of where the message appears
+configure
+local
+export
+select all
+Import local configuration
+Support for importing from Simple and Read Later
+about
+Follow us
+Follow us for timely updates
+the public
+QQ group
+encouragement and support
+Your encouragement and support are the greatest motivation for me
+buy me coffee
+share with friends
+Five-star praise
+If it helps you, give us a five-star review 🤪
+Five-star praise
+feedback and suggestions
+Most used link
+Official homepage
+user's guidance
+User Agreement
+Privacy Policy
+common problem
+new version update
+feedback
+download new version
+Donate support
+current version
+search in preferences
+
+toolbar
+Click the icon to customize the color
+Toolbar item spacing
+Toolbar group spacing

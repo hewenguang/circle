@@ -1,0 +1,39 @@
+.icon-switch-wrapper {
+  position: relative;
+  line-height: 0;
+  .icon-switch-children {
+    position: absolute;
+    left: -36px;
+    top: -2px;
+  }
+  .colorpicker {
+    opacity: 0;
+  }
+  .anticon {
+    position: absolute;
+    left: -45px;
+    top: -2px;
+  }
+  .item-icon {
+    left: 3px;
+    top: 1px;
+    font-size: 18px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .close-icon {
+    position: absolute;
+    left: -5px;
+    top: -7px;
+    z-index: 100;
+    display: none;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &:hover {
+    .close-icon {
+      display: block;
+    }
+  }
+}

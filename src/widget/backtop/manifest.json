@@ -1,0 +1,80 @@
+{
+  "title": "__MSG_backtop__",
+  "apply": "render_ready",
+  "dependencies": ["react", "antd"],
+  "priority": 270,
+  "options": {
+    "keys": {
+      "data": {
+        "backtop": {
+          "title": "__MSG_backtop__"
+        },
+        "backbottom": {
+          "title": "__MSG_backbottom__",
+          "priority": 271
+        }
+      }
+    },
+    "menu": {
+      "data": {
+        "backtop": {
+          "title": "__MSG_backtop__"
+        },
+        "backbottom": {
+          "title": "__MSG_backbottom__",
+          "priority": 271
+        }
+      }
+    },
+    "toolbar": {
+      "data": [
+        {
+          "group": 2,
+          "id": "backtop",
+          "icon": "UpOutlined",
+          "title": "__MSG_backtop__"
+        },
+        {
+          "group": 2,
+          "priority": 271,
+          "id": "backbottom",
+          "icon": "DownOutlined",
+          "title": "__MSG_backbottom__"
+        }
+      ]
+    }
+  },
+  "data": {
+    "keys": {
+      "backtop": {
+        "value": "g g"
+      },
+      "backbottom": {
+        "value": "G",
+        "priority": 271
+      }
+    },
+    "menu": {
+      "backtop": {
+        "title": "__MSG_backtop__"
+      },
+      "backbottom": {
+        "title": "__MSG_backbottom__",
+        "priority": 271
+      }
+    },
+    "toolbar": {
+      "backtop": {
+        "group": 2,
+        "icon": "UpOutlined",
+        "title": "__MSG_backtop__"
+      },
+      "backbottom": {
+        "group": 2,
+        "priority": 271,
+        "icon": "DownOutlined",
+        "title": "__MSG_backbottom__"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "title": "__MSG_outline__",
+  "apply": "render_ready",
+  "priority": 110,
+  "homepage_url": "outline",
+  "description": "__MSG_outline_desc__"
+}

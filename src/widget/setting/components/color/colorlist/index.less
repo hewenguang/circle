@@ -1,0 +1,32 @@
+.color-list {
+  width: 100%;
+  list-style: none;
+  padding: 0 3px 0 0;
+  display: flex;
+  justify-content: space-between;
+  li {
+    cursor: pointer;
+    border-radius: 3px;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    &.active,
+    &:hover {
+      outline: 2px solid var(--link);
+      outline-offset: 2px;
+    }
+    &:focus {
+      outline-offset: 2px;
+      outline: 2px solid var(--link) !important;
+    }
+    &.custom {
+      border: 1px solid #f0eded;
+      background-color: #fff;
+      &.active,
+      &:hover {
+        outline-color: #f0eded;
+      }
+    }
+  }
+}

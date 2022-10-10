@@ -1,0 +1,22 @@
+{
+  "lists": "白黒リスト",
+  "whitelist": "ホワイトリスト",
+  "blacklist": "ブラックリスト",
+  "add_whitelist": "現在のページをホワイトリストに追加",
+  "remove_whitelist": "現在のページをホワイトリストから削除",
+  "toggle_whitelist": "現在のページをホワイトリストに追加または削除する",
+  "add_whitelist_site": "現在の Web サイトをホワイトリストに登録する",
+  "remove_whitelist_site": "現在のサイトをホワイトリストから削除",
+  "toggle_whitelist_site": "現在のサイトをホワイトリストに追加または削除します",
+  "add_blacklist": "現在のページをブラックリストに追加",
+  "remove_blacklist": "現在のページをブラックリストから削除",
+  "toggle_blacklist": "現在のページをブラックリストに追加または削除します",
+  "add_blacklist_site": "現在のサイトをブラックリストに追加",
+  "remove_blacklist_site": "現在のサイトをブラックリストから削除",
+  "toggle_blacklist_site": "現在の Web サイトをブラックリストに追加または削除する",
+  "lists_remove_success": "正常に削除されました",
+  "lists_add_success": "正常に追加されました",
+  "title": "題名",
+  "url": "URL",
+  "operate": "操作する"
+}

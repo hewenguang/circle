@@ -1,0 +1,38 @@
+{
+  "name": "__MSG_name__",
+  "version": "2.5.0",
+  "manifest_version": 2,
+  "description": "__MSG_description__",
+  "background": {
+    "scripts": ["worker.js"],
+    "persistent": true
+  },
+  "permissions": ["contextMenus", "<all_urls>"],
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/16-default.png",
+      "32": "icons/32-default.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "default_locale": "en",
+  "options_ui": {
+    "page": "option.html",
+    "open_in_tab": true
+  },
+  "homepage_url": "http://circlereader.com",
+  "content_scripts": [
+    {
+      "js": ["app.js"],
+      "all_frames": false,
+      "run_at": "document_start",
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "web_accessible_resources": ["widget/*.css"]
+}
