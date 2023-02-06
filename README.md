@@ -1,10 +1,14 @@
 # 让网页赏心悦目，让阅读回归初心 - Circle 提供更舒适的阅读体验
 
-由染河**全职**开发的产品。v2.5.0 即将发布。认可我的工作，请我喝杯[咖啡](http://circlereader.com/donate) ☕️
+由染河**全职**开发的产品。v2.5.0 即将发布。认可我的工作，请我喝杯[咖啡](https://circlereader.com/donate) ☕️
 
 为了不饿死自己，v2.0.0 版加入高级功能。由于集成了用户体系，决定 v2.0 之后的版本部分开源更新。如果有同学对识别算法感兴趣，可以[看这里](https://ranhe.xyz/wang-ye-zheng-wen-ti-qu-suan-fa-yan-jiu-xue-xi/)
 
 `2022-10-10 采用 ts 重构，加入了插件体系，集成了 mainfest v3 版本热更新。`
+
+## 广而告之
+
+如果满意 Circle 阅读助手的识别能力，你的公司或者业务也刚好需要相关的功能，我们提供有私有化部署的方案，请联系我[商务合作](https://circlereader.com/contact)
 
 ## 组成
 
@@ -22,7 +26,7 @@
 
 比 Safari 阅读模式更强大的阅读助手浏览器扩展 Circle ，是浏览器自带阅读模式的扩充和完善；是电脑阅读网页、看小说、看新闻的不二神器；具有快捷键支持、自定义样式、自定义字体、自定义主题、自动滚动、自动加载下一页、大声朗读、文章大纲（outline）、返回顶部、分栏目阅读、打印阅读模式格式化之后的网页、支持浏览器自带的翻译等阅读辅助类功能。
 
-自研的解析引擎，解析更快速、解析能力更智能。自研的排版引擎，自动屏蔽 html 上的广告和噪音，和格式跑掉说拜拜。纯 js 开发的 Circle 阅读助手浏览器扩展，已经上线 Google Chrome 浏览器、火狐浏览器、Edge 浏览器、360 浏览器、Opera 浏览器。[免费下载安装 Circle](http://circlereader.com/download)
+自研的解析引擎，解析更快速、解析能力更智能。自研的排版引擎，自动屏蔽 html 上的广告和噪音，和格式跑掉说拜拜。纯 js 开发的 Circle 阅读助手浏览器扩展，已经上线 Google Chrome 浏览器、火狐浏览器、Edge 浏览器、360 浏览器、Opera 浏览器。[免费下载安装 Circle](https://circlereader.com/download)
 
 ## 关于 Circle 阅读助手
 
@@ -237,4 +241,4 @@ LI Yi：很快很简洁，感谢开发者！非常期待黑白名单~
 
 ## 支持我
 
-如果觉得 Circle 还不错，欢迎升级为高级帐户支持 Circle 更好的发展。你也可以在[这个页面](http://circlereader.com/donate)捐赠支持我
+如果觉得 Circle 还不错，欢迎升级为高级帐户支持 Circle 更好的发展。你也可以在[这个页面](https://circlereader.com/donate)捐赠支持我
